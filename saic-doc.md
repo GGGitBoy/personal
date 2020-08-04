@@ -4,11 +4,13 @@
 ### 1.1 集群备份
 
 #### 1.1.1 一级备份
-集群升级后异常，满足回滚条件，可快速恢复。每个local集群节点均执行：
+集群升级后异常，满足回滚条件，可快速恢复。每个local集群节点均执行:   
+
 `cp -r /var/lib/etcd /home/rke/etcd-bak-$(date +"%Y%m%d%H%M%S")`
 
 #### 1.1.2 二级备份
-通过rke再次对集群备份，用于一级备份失效后的集群恢复：
+通过rke再次对集群备份，用于一级备份失效后的集群恢复:   
+
 `rke etcd snapshot-save --name SNAPSHOT-$(date +"%Y%m%d%H%M%S").db --config cluster.yml`
 
 ### 1.2 记录升级前的镜像版本
@@ -32,10 +34,12 @@
 ### 2.3 升级rancher server和rancher ui
 
 #### 2.3.1 升级
-* 进入local集群，修改`cattle-system`下的`rancher`， 编辑yaml，修改rancher的镜像为：
+* 进入local集群，修改`cattle-system`下的`rancher`， 编辑yaml，修改rancher的镜像为:    
+
 rancher server: `dockerrrboy/rancher:dev`
 
-* 进入setting，在ui-index处修改UI路径为:
+* 进入setting，在ui-index处修改UI路径为:    
+
 rancher UI: `https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html`
 
 #### 2.3.2 待升级完成
@@ -45,9 +49,10 @@ rancher UI: `https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-d
 
 ### 2.4 修改仓库地址
 
-* 进入catalogs，修改system-library为: 
-catalog URL: https://github.com/GGGitBoy/system-charts.git 
-branch: monitor-refactor-v0.1.7001
+* 进入catalogs，修改system-library为:    
+
+catalog URL: `https://github.com/GGGitBoy/system-charts.git`
+branch: `monitor-refactor-v0.1.7001`
  
 ### 2.5 升级监控
 
