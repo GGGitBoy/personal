@@ -1,0 +1,11 @@
+apiVersion: logging.banzaicloud.io/v1beta1
+kind: ClusterOutput
+metadata:
+  name: test-output
+  namespace: default
+spec:
+  elasticsearch:
+    host: 127.0.0.1
+    index_name: test
+    port: 80
+    scheme: http

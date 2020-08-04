@@ -1,0 +1,3 @@
+#!/bin/sh
+kubectl get servicemonitors.monitoring.coreos.com --no-headers=true -n cattle-monitoring-system | awk '{print $1}' | xargs kubectl delete servicemonitors.monitoring.coreos.com -n cattle-monitoring-system
+kubectl get prometheusrules.monitoring.coreos.com --no-headers=true -n cattle-monitoring-system | awk '{print $1}' | xargs kubectl delete prometheusrules.monitoring.coreos.com -n cattle-monitoring-system
