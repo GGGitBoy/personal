@@ -36,11 +36,11 @@
 #### 2.3.1 升级
 * 进入local集群，修改`cattle-system`下的`rancher`， 编辑yaml，修改rancher的镜像为:    
 
-rancher server: `dockerrrboy/rancher:dev`
+    * rancher server: `dockerrrboy/rancher:dev`
 
 * 进入setting，在ui-index处修改UI路径为:    
-
-rancher UI: `https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html`
+ 
+    * rancher UI: `https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html`
 
 #### 2.3.2 待升级完成
 * 等待local集群rancher下的所有pod Running。
@@ -51,8 +51,8 @@ rancher UI: `https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-d
 
 * 进入catalogs，修改system-library为:    
 
-catalog URL: `https://github.com/GGGitBoy/system-charts.git`
-branch: `monitor-refactor-v0.1.7001`
+    * catalog URL: `https://github.com/GGGitBoy/system-charts.git`
+    * branch: `monitor-refactor-v0.1.7001`
  
 ### 2.5 升级监控
 
