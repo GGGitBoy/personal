@@ -23,10 +23,10 @@
 ### 2.1 镜像准备
 |  镜像   | 版本  |
 |  ----  | ----  |
-| rancher-server  | dockerrrboy/rancher:dev |
-| rancher-agent  | dockerrrboy/rancher-agent:dev |
-| rancher-ui  | https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html | 
- 
+| rancher-server  | dockerrrboy/rancher:refactor-monitoring |
+| rancher-agent  | dockerrrboy/rancher-agent:refactor-monitoring |
+| rancher-ui  | https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html |
+
 ### 2.2 关闭所有项目监控
 
 * 查看有开启项目监控的project，将项目监控disable
@@ -36,10 +36,10 @@
 #### 2.3.1 升级
 * 进入local集群，修改`cattle-system`下的`rancher`， 编辑yaml，修改rancher的镜像为:    
 
-    * rancher server: `dockerrrboy/rancher:dev`
+    * rancher server: `dockerrrboy/rancher:refactor-monitoring`
 
 * 进入setting，在ui-index处修改UI路径为:    
- 
+
     * rancher UI: `https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html`
 
 #### 2.3.2 待升级完成
@@ -53,7 +53,7 @@
 
     * catalog URL: `https://github.com/GGGitBoy/system-charts.git`
     * branch: `monitor-refactor-v0.1.7001`
- 
+
 ### 2.5 升级监控
 
 #### 2.5.1 升级
@@ -86,3 +86,40 @@
 * istio图表显示正常
 
 
+## 四 设置告警表达式
+
+### 4.1 告警表达式添加
+
+* 添加告警组
+名称：A set of alerts for monitoring prometheus
+描述：Alert for prometheus
+
+* 添加告警
+1. 名称：High cardinality metrics
+表达式：`count by (__name__)({__name__=~".+"})`
+是：大于 10000  持续 5minutes
+发送：警告
+
+2. 名称：Prometheus config reload failed
+表达式：`prometheus_config_last_reload_successful{job="expose-prometheus-metrics",namespace="cattle-prometheus"}`
+是：等于 0  持续 10minutes
+发送：警告
+
+3. 名称：Prometheus notification queue running full
+表达式：`predict_linear(prometheus_notifications_queue_length{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m], 60 * 30) > prometheus_notifications_queue_capacity{job="expose-prometheus-metrics",namespace="cattle-prometheus"}`
+是：不为空  持续 10minutes
+发送：警告
+
+4. 名称：Prometheus error sending alerts
+表达式：`rate(prometheus_notifications_errors_total{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m]) / rate(prometheus_notifications_sent_total{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m])`
+是：大于 0.03  持续 10minutes
+发送：危险
+
+5. 名称：Prometheus not ingesting samples
+表达式：`rate(prometheus_tsdb_head_samples_appended_total{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m])`
+是：小于或等于 0  持续 10minutes
+发送：警告
+
+### 4.2 注意事项
+
+高阶的表达式做查询的时候会比较占用prometheus的内存资源，因此如果有需要可以适当调整对prometheus的内存限制数值。避免prometheus因为OOM被杀掉，导致重启
