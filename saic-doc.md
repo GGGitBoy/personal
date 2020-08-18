@@ -40,7 +40,7 @@
 
 * 进入setting，在ui-index处修改UI路径为:    
 
-    * rancher UI: `https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html`
+    * rancher UI: `https://ly5156.xyz/saic-ui/2.3-fixes/index.html`
 
 #### 2.3.2 待升级完成
 * 等待local集群rancher下的所有pod Running。
