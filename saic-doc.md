@@ -25,7 +25,7 @@
 |  ----  | ----  |
 | rancher-server  | dockerrrboy/rancher:refactor-monitoring |
 | rancher-agent  | dockerrrboy/rancher-agent:refactor-monitoring |
-| rancher-ui  | https://wj-pandaria-ui.s3-ap-northeast-1.amazonaws.com/static/2.3-dev/index.html |
+| rancher-ui  | https://ly5156.xyz/saic-ui/2.3-fixes/index.html |
 
 ### 2.2 关闭所有项目监控
 
