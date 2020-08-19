@@ -123,3 +123,12 @@
 ### 4.2 注意事项
 
 高阶的表达式做查询的时候会比较占用prometheus的内存资源，因此如果有需要可以适当调整对prometheus的内存限制数值。避免prometheus因为OOM被杀掉，导致重启      
+
+## 五 更新 CPU/Memory 告警表达式步骤
+因监控版本升级到了0.0.7001，表达式中部分标签发生了变化，系统上升级前已配置的CPU/Memory使用率的告警表达式使用查询条件`name=~"^k8s_.*",image!=""`，其中的标签`name`,`image`已经不存在，需要更新升级前配置的项目级别CPU/Memory使用率的告警表达式。
+
+### 5.1 步骤
+* 配置环境变量，需要配置环境变量 `KUBECONFIG` 使运行脚本的环境能够访问到rancher server所在的集群
+* 准备工具jq，[下载地址](https://github.com/stedolan/jq/releases) 
+* 准备工具kubectl，[下载配置文档](https://kubernetes.io/zh/docs/tasks/tools/install-kubectl) 
+* 运行脚本 update-project-alert-rule-expression.sh
