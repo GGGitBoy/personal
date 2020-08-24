@@ -95,30 +95,12 @@
 描述：Alert for prometheus     
 
 * 添加告警     
-1. 名称：High cardinality metrics     
+名称：High cardinality metrics     
 表达式：`count by (__name__)({__name__=~".+"})`     
 是：大于 10000      持续 5minutes     
 发送：警告      
 
-2. 名称：Prometheus config reload failed      
-表达式：`prometheus_config_last_reload_successful{job="expose-prometheus-metrics",namespace="cattle-prometheus"}`     
-是：等于 0      持续 10minutes     
-发送：警告      
-
-3. 名称：Prometheus notification queue running full      
-表达式：`predict_linear(prometheus_notifications_queue_length{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m], 60 * 30) > prometheus_notifications_queue_capacity{job="expose-prometheus-metrics",namespace="cattle-prometheus"}`      
-是：不为空      持续 10minutes      
-发送：警告     
-
-4. 名称：Prometheus error sending alerts        
-表达式：`rate(prometheus_notifications_errors_total{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m]) / rate(prometheus_notifications_sent_total{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m])`      
-是：大于 0.03       持续 10minutes       
-发送：危险     
-
-5. 名称：Prometheus not ingesting samples        
-表达式：`rate(prometheus_tsdb_head_samples_appended_total{job="expose-prometheus-metrics",namespace="cattle-prometheus"}[5m])`     
-是：小于或等于 0        持续 10minutes       
-发送：警告        
+注：该表达式为统计每个指标的时间序列数，超出 10000 并持续5分钟的告警        
 
 ### 4.2 注意事项
 
