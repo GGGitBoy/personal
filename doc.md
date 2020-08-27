@@ -114,3 +114,28 @@
 * 准备工具jq，[下载地址](https://github.com/stedolan/jq/releases) 
 * 准备工具kubectl，[下载配置文档](https://kubernetes.io/zh/docs/tasks/tools/install-kubectl) 
 * 运行脚本 update-project-alert-rule-expression.sh
+
+## 六 权限列表
+
+### 6.1 列表        
+
+|  操作  |  Admin  |  Cluster Owner  |  Cluster Member  |  Project Owner  |  Project Member  |  Project Read Only  |
+|  ----  |  ----  |  ----  |  ----  |  ----  |  ----  |  ----  |
+|  开启全局监控  |  true  |    |    |    |    |    |
+|  查看监控大屏  |  true  |  true  |    |    |    |    |
+|  查看全局监控grafana dashboard  |  true  |  true  |    |    |    |    |
+|  Thanos UI 查询多集群的指标信息  |  true  |  true  |    |    |    |    |
+|  开启集群监控  |  true  |  true  |    |    |    |    |
+|  添加集群告警  |  true  |  true  |  true  |    |    |    |
+|  查看集群级别Rancher UI监控图表 |  true  |  true  |  true  |    |    |    |
+|  添加项目告警  |  true  |  true  |  true  |  true  |  true  |    |
+|  查看集群监控grafana dashboard |  true  |  true  |  true  |  true  |  true  |  true  |
+|  查看项目级别Rancher UI监控图表 |  true  |  true  |  true  |  true  |  true  |  true  |
+
+
+### 6.2 注意事项        
+1. 查看集群监控grafana dashboard根据命名空间作权限区分，不同角色只能看到自己拥有权限的命名空间相应的资源数据        
+2. 针对“查看监控大屏”，“查看全局监控grafana dashboard”，“Thanos UI 查询多集群的指标信息”等操作对应的cluster owner为全局监控组件所部署集群的cluster owner，其他集群的cluster owner没有对应权限       
+
+
+
