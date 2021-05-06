@@ -1,0 +1,1888 @@
+2021/05/06 06:08:48 [INFO] Rancher version v2.5.7-ent (62bcd0ef7) is starting
+2021/05/06 06:08:48 [INFO] Rancher arguments {ACMEDomains:[] AddLocal:true Embedded:false BindHost: HTTPListenPort:80 HTTPSListenPort:443 K8sMode:auto Debug:false Trace:false NoCACerts:false AuditLogPath:/var/log/auditlog/rancher-api-audit.log AuditLogMaxage:10 AuditLogMaxsize:100 AuditLogMaxbackup:10 AuditLevel:0 Agent:false Features:}
+2021/05/06 06:08:48 [INFO] Listening on /tmp/log.sock
+2021/05/06 06:08:48 [INFO] Running etcd --data-dir=management-state/etcd --heartbeat-interval=500 --election-timeout=5000
+2021/05/06 06:08:58 [INFO] Waiting for k3s to start
+2021/05/06 06:08:59 [INFO] Waiting for k3s to start
+2021/05/06 06:09:00 [INFO] Waiting for k3s to start
+2021/05/06 06:09:01 [INFO] Waiting for k3s to start
+2021/05/06 06:09:02 [INFO] Waiting for k3s to start
+2021/05/06 06:09:03 [INFO] Waiting for k3s to start
+2021/05/06 06:09:04 [INFO] Waiting for k3s to start
+2021/05/06 06:09:05 [INFO] Updating CRD settings.management.cattle.io
+2021/05/06 06:09:06 [INFO] Updating CRD preferences.management.cattle.io
+2021/05/06 06:09:06 [INFO] Updating CRD features.management.cattle.io
+2021/05/06 06:09:06 [INFO] Creating CRD clusterrepos.catalog.cattle.io
+2021/05/06 06:09:07 [INFO] Creating CRD operations.catalog.cattle.io
+2021/05/06 06:09:07 [INFO] Creating CRD apps.catalog.cattle.io
+2021/05/06 06:09:08 [INFO] Waiting for CRD apps.catalog.cattle.io to become available
+2021/05/06 06:09:09 [INFO] Done waiting for CRD apps.catalog.cattle.io to become available
+2021/05/06 06:09:09 [INFO] rate limit for login http request: 1.000000/s
+2021/05/06 06:09:09 [INFO] Auth limit cooldown period for login http request: 20s
+2021/05/06 06:09:09 [INFO] Starting API controllers
+2021/05/06 06:09:09 [INFO] Starting /v1, Kind=Secret controller
+2021/05/06 06:09:09 [INFO] Starting management.cattle.io/v3, Kind=GroupMember controller
+2021/05/06 06:09:09 [INFO] Starting management.cattle.io/v3, Kind=Group controller
+2021/05/06 06:09:09 [INFO] Starting management.cattle.io/v3, Kind=User controller
+2021/05/06 06:09:09 [INFO] Starting management.cattle.io/v3, Kind=Token controller
+2021/05/06 06:09:09 [INFO] Starting management.cattle.io/v3, Kind=UserAttribute controller
+2021/05/06 06:09:10 [INFO] Starting apiextensions.k8s.io/v1beta1, Kind=CustomResourceDefinition controller
+2021/05/06 06:09:10 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=Role controller
+2021/05/06 06:09:10 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=RoleBinding controller
+2021/05/06 06:09:10 [INFO] Starting management.cattle.io/v3, Kind=Feature controller
+2021/05/06 06:09:10 [INFO] Starting management.cattle.io/v3, Kind=Preference controller
+2021/05/06 06:09:10 [INFO] Starting /v1, Kind=ConfigMap controller
+2021/05/06 06:09:10 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=ClusterRoleBinding controller
+2021/05/06 06:09:10 [INFO] Starting management.cattle.io/v3, Kind=Cluster controller
+2021/05/06 06:09:10 [INFO] Starting apiregistration.k8s.io/v1, Kind=APIService controller
+2021/05/06 06:09:10 [INFO] Starting management.cattle.io/v3, Kind=Setting controller
+2021/05/06 06:09:10 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=ClusterRole controller
+2021/05/06 06:09:10 [INFO] Starting /v1, Kind=Secret controller
+2021/05/06 06:09:10 [INFO] Starting catalog.cattle.io/v1, Kind=ClusterRepo controller
+2021/05/06 06:09:10 [INFO] Creating CRD fleetworkspaces.management.cattle.io
+2021/05/06 06:09:10 [INFO] Waiting for CRD fleetworkspaces.management.cattle.io to become available
+2021/05/06 06:09:10 [INFO] Refreshing all schemas
+2021/05/06 06:09:10 [INFO] Done waiting for CRD fleetworkspaces.management.cattle.io to become available
+2021/05/06 06:09:10 [INFO] Running in single server mode, will not peer connections
+2021/05/06 06:09:10 [INFO] rate limit for login http request: 1.000000/s
+2021/05/06 06:09:10 [INFO] Auth limit cooldown period for login http request: 20s
+2021/05/06 06:09:10 [INFO] Steve auth startup complete
+2021/05/06 06:09:11 [INFO] Refreshing all schemas
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Binding
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind ComponentStatus
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind ConfigMap
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Endpoints
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Event
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind LimitRange
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Namespace
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Node
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind PersistentVolumeClaim
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind PersistentVolume
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Pod
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind PodTemplate
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind ReplicationController
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind ResourceQuota
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Secret
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind ServiceAccount
+2021/05/06 06:09:11 [INFO] APIVersion /v1 Kind Service
+2021/05/06 06:09:11 [INFO] APIVersion apiregistration.k8s.io/v1 Kind APIService
+2021/05/06 06:09:11 [INFO] APIVersion apiregistration.k8s.io/v1beta1 Kind APIService
+2021/05/06 06:09:11 [INFO] APIVersion extensions/v1beta1 Kind Ingress
+2021/05/06 06:09:11 [INFO] APIVersion apps/v1 Kind ControllerRevision
+2021/05/06 06:09:11 [INFO] APIVersion apps/v1 Kind DaemonSet
+2021/05/06 06:09:11 [INFO] APIVersion apps/v1 Kind Deployment
+2021/05/06 06:09:11 [INFO] APIVersion apps/v1 Kind ReplicaSet
+2021/05/06 06:09:11 [INFO] APIVersion apps/v1 Kind StatefulSet
+2021/05/06 06:09:11 [INFO] APIVersion events.k8s.io/v1beta1 Kind Event
+2021/05/06 06:09:11 [INFO] APIVersion authentication.k8s.io/v1 Kind TokenReview
+2021/05/06 06:09:11 [INFO] APIVersion authentication.k8s.io/v1beta1 Kind TokenReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1 Kind LocalSubjectAccessReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectAccessReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectRulesReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1 Kind SubjectAccessReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind LocalSubjectAccessReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectAccessReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectRulesReview
+2021/05/06 06:09:11 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SubjectAccessReview
+2021/05/06 06:09:11 [INFO] APIVersion autoscaling/v1 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:11 [INFO] APIVersion autoscaling/v2beta1 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:11 [INFO] APIVersion autoscaling/v2beta2 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:11 [INFO] APIVersion batch/v1 Kind Job
+2021/05/06 06:09:11 [INFO] APIVersion batch/v1beta1 Kind CronJob
+2021/05/06 06:09:11 [INFO] APIVersion certificates.k8s.io/v1beta1 Kind CertificateSigningRequest
+2021/05/06 06:09:11 [INFO] APIVersion networking.k8s.io/v1 Kind NetworkPolicy
+2021/05/06 06:09:11 [INFO] APIVersion networking.k8s.io/v1beta1 Kind IngressClass
+2021/05/06 06:09:11 [INFO] APIVersion networking.k8s.io/v1beta1 Kind Ingress
+2021/05/06 06:09:11 [INFO] APIVersion policy/v1beta1 Kind PodDisruptionBudget
+2021/05/06 06:09:11 [INFO] APIVersion policy/v1beta1 Kind PodSecurityPolicy
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRoleBinding
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRole
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind RoleBinding
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind Role
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRoleBinding
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRole
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind RoleBinding
+2021/05/06 06:09:11 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind Role
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1 Kind CSIDriver
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1 Kind CSINode
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1 Kind StorageClass
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1 Kind VolumeAttachment
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSIDriver
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSINode
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1beta1 Kind StorageClass
+2021/05/06 06:09:11 [INFO] APIVersion storage.k8s.io/v1beta1 Kind VolumeAttachment
+2021/05/06 06:09:11 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind MutatingWebhookConfiguration
+2021/05/06 06:09:11 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:09:11 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind MutatingWebhookConfiguration
+2021/05/06 06:09:11 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:09:11 [INFO] APIVersion apiextensions.k8s.io/v1 Kind CustomResourceDefinition
+2021/05/06 06:09:11 [INFO] APIVersion apiextensions.k8s.io/v1beta1 Kind CustomResourceDefinition
+2021/05/06 06:09:11 [INFO] APIVersion scheduling.k8s.io/v1 Kind PriorityClass
+2021/05/06 06:09:11 [INFO] APIVersion scheduling.k8s.io/v1beta1 Kind PriorityClass
+2021/05/06 06:09:11 [INFO] APIVersion coordination.k8s.io/v1 Kind Lease
+2021/05/06 06:09:11 [INFO] APIVersion coordination.k8s.io/v1beta1 Kind Lease
+2021/05/06 06:09:11 [INFO] APIVersion node.k8s.io/v1beta1 Kind RuntimeClass
+2021/05/06 06:09:11 [INFO] APIVersion discovery.k8s.io/v1beta1 Kind EndpointSlice
+2021/05/06 06:09:11 [INFO] APIVersion catalog.cattle.io/v1 Kind App
+2021/05/06 06:09:11 [INFO] APIVersion catalog.cattle.io/v1 Kind Operation
+2021/05/06 06:09:11 [INFO] APIVersion catalog.cattle.io/v1 Kind ClusterRepo
+2021/05/06 06:09:11 [INFO] APIVersion helm.cattle.io/v1 Kind HelmChart
+2021/05/06 06:09:11 [INFO] APIVersion k3s.cattle.io/v1 Kind Addon
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind NodeTemplate
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDnsProvider
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlert
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind CisConfig
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectNetworkPolicy
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Setting
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind TemplateContent
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ComposeConfig
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind EtcdBackup
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind CisBenchmarkVersion
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Token
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind TemplateVersion
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplate
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind NotificationTemplate
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Node
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterAppRevision
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind AuthConfig
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRoleBinding
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRegistrationToken
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterApp
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterMonitorGraph
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertGroup
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind SamlToken
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind NodePool
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind KontainerDriver
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplateVersion
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplateProjectBinding
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectMonitorGraph
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sServiceOption
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertRule
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDns
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind User
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRole
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplate
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Notifier
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterLogging
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlert
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectRoleTemplateBinding
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertGroup
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Feature
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Preference
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterScan
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectCatalog
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Group
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplateRevision
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind UserAttribute
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Catalog
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplate
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sSystemImage
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Template
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind RoleTemplate
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Cluster
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRoleTemplateBinding
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind NodeDriver
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind FleetWorkspace
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectLogging
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind GroupMember
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertRule
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind DynamicSchema
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind MonitorMetric
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind ClusterCatalog
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind RkeAddon
+2021/05/06 06:09:11 [INFO] APIVersion management.cattle.io/v3 Kind Project
+2021/05/06 06:09:11 [INFO] APIVersion mgt.pandaria.io/v3 Kind SensitiveFilter
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind Pipeline
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeRepository
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind AppRevision
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeCredential
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind PipelineExecution
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind App
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeProviderConfig
+2021/05/06 06:09:11 [INFO] APIVersion project.cattle.io/v3 Kind PipelineSetting
+2021/05/06 06:09:11 [INFO] ProxyToLeader: skip register proxy as no login limit settings
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterScan
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=Endpoints
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=RkeK8sServiceOption
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=AuthConfig
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=App
+2021/05/06 06:09:14 [INFO] Watching metadata for rbac.authorization.k8s.io/v1, Kind=ClusterRole
+2021/05/06 06:09:14 [INFO] Watching metadata for storage.k8s.io/v1, Kind=CSINode
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Notifier
+2021/05/06 06:09:14 [INFO] Watching metadata for storage.k8s.io/v1, Kind=CSIDriver
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Template
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=SamlToken
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterRoleTemplateBinding
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=Node
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=ConfigMap
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ComposeConfig
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Node
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectCatalog
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=Pod
+2021/05/06 06:09:14 [INFO] Watching metadata for discovery.k8s.io/v1beta1, Kind=EndpointSlice
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=RoleTemplate
+2021/05/06 06:09:14 [INFO] Watching metadata for helm.cattle.io/v1, Kind=HelmChart
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=MonitorMetric
+2021/05/06 06:09:14 [INFO] Watching metadata for catalog.cattle.io/v1, Kind=Operation
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=TemplateContent
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=PipelineSetting
+2021/05/06 06:09:14 [INFO] Watching metadata for k3s.cattle.io/v1, Kind=Addon
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=ServiceAccount
+2021/05/06 06:09:14 [INFO] Watching metadata for events.k8s.io/v1beta1, Kind=Event
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Token
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=Pipeline
+2021/05/06 06:09:14 [INFO] Watching metadata for catalog.cattle.io/v1, Kind=ClusterRepo
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=Namespace
+2021/05/06 06:09:14 [INFO] Watching metadata for policy/v1beta1, Kind=PodDisruptionBudget
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterAlertRule
+2021/05/06 06:09:14 [INFO] Watching metadata for networking.k8s.io/v1beta1, Kind=IngressClass
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectRoleTemplateBinding
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=PodSecurityPolicyTemplate
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=DynamicSchema
+2021/05/06 06:09:14 [INFO] Watching metadata for admissionregistration.k8s.io/v1, Kind=ValidatingWebhookConfiguration
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=SourceCodeCredential
+2021/05/06 06:09:14 [INFO] Watching metadata for autoscaling/v2beta2, Kind=HorizontalPodAutoscaler
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectAlertGroup
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Group
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectMonitorGraph
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=KontainerDriver
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterAlert
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=MultiClusterAppRevision
+2021/05/06 06:09:14 [INFO] Watching metadata for admissionregistration.k8s.io/v1, Kind=MutatingWebhookConfiguration
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=EtcdBackup
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=NodePool
+2021/05/06 06:09:14 [INFO] Watching metadata for scheduling.k8s.io/v1, Kind=PriorityClass
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=PodTemplate
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=FleetWorkspace
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=CatalogTemplateVersion
+2021/05/06 06:09:14 [INFO] Watching metadata for networking.k8s.io/v1, Kind=NetworkPolicy
+2021/05/06 06:09:14 [INFO] Watching metadata for policy/v1beta1, Kind=PodSecurityPolicy
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterAlertGroup
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectAlert
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectAlertRule
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=CisBenchmarkVersion
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=RkeK8sSystemImage
+2021/05/06 06:09:14 [INFO] Watching metadata for coordination.k8s.io/v1, Kind=Lease
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=SourceCodeProviderConfig
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=GlobalDns
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=UserAttribute
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterLogging
+2021/05/06 06:09:14 [INFO] Watching metadata for batch/v1beta1, Kind=CronJob
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=Secret
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectNetworkPolicy
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=TemplateVersion
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ProjectLogging
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterTemplate
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Project
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=PodSecurityPolicyTemplateProjectBinding
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=NodeTemplate
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterTemplateRevision
+2021/05/06 06:09:14 [INFO] Watching metadata for rbac.authorization.k8s.io/v1, Kind=RoleBinding
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Setting
+2021/05/06 06:09:14 [INFO] Watching metadata for apps/v1, Kind=DaemonSet
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=Event
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterCatalog
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Catalog
+2021/05/06 06:09:14 [INFO] Watching metadata for apps/v1, Kind=StatefulSet
+2021/05/06 06:09:14 [INFO] Watching metadata for batch/v1, Kind=Job
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=User
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=Service
+2021/05/06 06:09:14 [INFO] Watching metadata for storage.k8s.io/v1, Kind=VolumeAttachment
+2021/05/06 06:09:14 [INFO] Watching metadata for networking.k8s.io/v1beta1, Kind=Ingress
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=LimitRange
+2021/05/06 06:09:14 [INFO] Watching metadata for certificates.k8s.io/v1beta1, Kind=CertificateSigningRequest
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=MultiClusterApp
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=PersistentVolume
+2021/05/06 06:09:14 [INFO] Watching metadata for apps/v1, Kind=ReplicaSet
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=NotificationTemplate
+2021/05/06 06:09:14 [INFO] Watching metadata for node.k8s.io/v1beta1, Kind=RuntimeClass
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=GroupMember
+2021/05/06 06:09:14 [INFO] Watching metadata for apps/v1, Kind=ControllerRevision
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Feature
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=CatalogTemplate
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Cluster
+2021/05/06 06:09:14 [INFO] Watching metadata for apiregistration.k8s.io/v1, Kind=APIService
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=NodeDriver
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=RkeAddon
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterRegistrationToken
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=PersistentVolumeClaim
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=ClusterMonitorGraph
+2021/05/06 06:09:14 [INFO] Watching metadata for rbac.authorization.k8s.io/v1, Kind=ClusterRoleBinding
+2021/05/06 06:09:14 [INFO] Watching metadata for mgt.pandaria.io/v3, Kind=SensitiveFilter
+2021/05/06 06:09:14 [INFO] Watching metadata for rbac.authorization.k8s.io/v1, Kind=Role
+2021/05/06 06:09:14 [INFO] Watching metadata for apps/v1, Kind=Deployment
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=ReplicationController
+2021/05/06 06:09:14 [INFO] Watching metadata for /v1, Kind=ResourceQuota
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=PipelineExecution
+2021/05/06 06:09:14 [INFO] Watching metadata for storage.k8s.io/v1, Kind=StorageClass
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=GlobalRoleBinding
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=AppRevision
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=Preference
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=GlobalRole
+2021/05/06 06:09:14 [INFO] Watching metadata for catalog.cattle.io/v1, Kind=App
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=CisConfig
+2021/05/06 06:09:14 [INFO] Watching metadata for project.cattle.io/v3, Kind=SourceCodeRepository
+2021/05/06 06:09:14 [INFO] Watching metadata for apiextensions.k8s.io/v1, Kind=CustomResourceDefinition
+2021/05/06 06:09:14 [INFO] Watching metadata for management.cattle.io/v3, Kind=GlobalDnsProvider
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=RoleTemplate controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=GlobalRoleBinding controller
+2021/05/06 06:09:21 [INFO] Starting project.cattle.io/v3, Kind=SourceCodeCredential controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterCatalog controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=RkeK8sSystemImage controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=RkeK8sServiceOption controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterTemplate controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=NodeDriver controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=CatalogTemplate controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ProjectRoleTemplateBinding controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ProjectLogging controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=User controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterRoleTemplateBinding controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=GlobalRole controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=CisConfig controller
+2021/05/06 06:09:21 [INFO] Starting /v1, Kind=Namespace controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=MultiClusterAppRevision controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=RkeAddon controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=KontainerDriver controller
+2021/05/06 06:09:21 [INFO] Starting project.cattle.io/v3, Kind=Pipeline controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=MultiClusterApp controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterLogging controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=UserAttribute controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=Catalog controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=PodSecurityPolicyTemplate controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=GlobalDns controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=Token controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=NodePool controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=PodSecurityPolicyTemplateProjectBinding controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=DynamicSchema controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterRegistrationToken controller
+2021/05/06 06:09:21 [INFO] Starting project.cattle.io/v3, Kind=SourceCodeRepository controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=CatalogTemplateVersion controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=Node controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=Project controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=CisBenchmarkVersion controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=GroupMember controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ProjectCatalog controller
+2021/05/06 06:09:21 [INFO] Starting project.cattle.io/v3, Kind=App controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=Group controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterTemplateRevision controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=NodeTemplate controller
+2021/05/06 06:09:21 [INFO] Starting project.cattle.io/v3, Kind=PipelineExecution controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=AuthConfig controller
+2021/05/06 06:09:21 [INFO] Listening on :443
+2021/05/06 06:09:21 [INFO] Listening on :80
+2021/05/06 06:09:21 [INFO] Updating TLS secret for serving-cert (count: 5): map[listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-13.124.178.27:13.124.178.27 listener.cattle.io/cn-172.17.0.2:172.17.0.2 listener.cattle.io/cn-localhost:localhost listener.cattle.io/cn-rancher.cattle-system:rancher.cattle-system listener.cattle.io/hash:0c01e7a4150d2427cfe8b198107da9786435aaa810f3fc1f5a43705e903ccd38]
+2021/05/06 06:09:21 [INFO] Listening on :444
+2021/05/06 06:09:21 [INFO] Active TLS secret serving-cert (ver=12812) (count 5): map[listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-13.124.178.27:13.124.178.27 listener.cattle.io/cn-172.17.0.2:172.17.0.2 listener.cattle.io/cn-localhost:localhost listener.cattle.io/cn-rancher.cattle-system:rancher.cattle-system listener.cattle.io/hash:0c01e7a4150d2427cfe8b198107da9786435aaa810f3fc1f5a43705e903ccd38]
+2021/05/06 06:09:21 [INFO] Reconciling GlobalRoles
+2021/05/06 06:09:21 [INFO] Creating restricted-admin
+2021/05/06 06:09:21 [INFO] Reconciling RoleTemplates
+2021/05/06 06:09:21 [INFO] Starting /v1, Kind=Secret controller
+2021/05/06 06:09:21 [INFO] Active TLS secret serving-cert (ver=12812) (count 5): map[listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-13.124.178.27:13.124.178.27 listener.cattle.io/cn-172.17.0.2:172.17.0.2 listener.cattle.io/cn-localhost:localhost listener.cattle.io/cn-rancher.cattle-system:rancher.cattle-system listener.cattle.io/hash:0c01e7a4150d2427cfe8b198107da9786435aaa810f3fc1f5a43705e903ccd38]
+2021/05/06 06:09:21 [INFO] adding kontainer driver rancherKubernetesEngine
+2021/05/06 06:09:21 [INFO] adding kontainer driver googleKubernetesEngine
+2021/05/06 06:09:21 [INFO] adding kontainer driver azureKubernetesService
+2021/05/06 06:09:21 [INFO] adding kontainer driver amazonElasticContainerService
+2021/05/06 06:09:21 [INFO] adding kontainer driver baiducloudcontainerengine
+2021/05/06 06:09:21 [INFO] adding kontainer driver aliyunkubernetescontainerservice
+2021/05/06 06:09:21 [INFO] adding kontainer driver tencentkubernetesengine
+2021/05/06 06:09:21 [INFO] adding kontainer driver huaweicontainercloudengine
+2021/05/06 06:09:21 [INFO] adding kontainer driver oraclecontainerengine
+2021/05/06 06:09:21 [INFO] adding kontainer driver linodekubernetesengine
+2021/05/06 06:09:21 [INFO] adding kontainer driver opentelekomcloudcontainerengine
+2021/05/06 06:09:21 [INFO] Updating node driver amazonec2
+2021/05/06 06:09:21 [INFO] Creating node driver cloudscale
+2021/05/06 06:09:21 [INFO] Starting catalog controller
+2021/05/06 06:09:21 [INFO] Starting project-level catalog controller
+2021/05/06 06:09:21 [INFO] Starting cluster-level catalog controller
+2021/05/06 06:09:21 [INFO] update kontainerdriver amazonelasticcontainerservice
+2021/05/06 06:09:21 [INFO] update kontainerdriver googlekubernetesengine
+2021/05/06 06:09:21 [INFO] update kontainerdriver baiducloudcontainerengine
+2021/05/06 06:09:21 [INFO] update kontainerdriver rancherkubernetesengine
+2021/05/06 06:09:21 [INFO] update kontainerdriver tencentkubernetesengine
+2021/05/06 06:09:21 [INFO] update kontainerdriver huaweicontainercloudengine
+2021/05/06 06:09:21 [INFO] update kontainerdriver oraclecontainerengine
+2021/05/06 06:09:21 [INFO] [mgmt-auth-gr-controller] Updating clusterRole cattle-globalrole-user. GlobalRole rules have changed. Have: [{Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[principals roletemplates] ResourceNames:[] NonResourceURLs:[]} {Verbs:[*] APIGroups:[management.cattle.io] Resources:[preferences] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[settings] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[features] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[templates templateversions catalogs] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[clusters] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[nodedrivers] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[kontainerdrivers] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[podsecuritypolicytemplates] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[nodetemplates] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[fleetworkspaces] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[] Resources:[secrets] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[multiclusterapps globaldnses globaldnsproviders clustertemplaterevisions] ResourceNames:[] NonResourceURLs:[]} {Verbs:[*] APIGroups:[project.cattle.io] Resources:[sourcecodecredentials] ResourceNames:[] NonResourceURLs:[]} {Verbs:[*] APIGroups:[project.cattle.io] Resources:[sourcecoderepositories] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[rkek8ssystemimages] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[rkek8sserviceoptions] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[rkeaddons] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[cisconfigs] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[cisbenchmarkversions] ResourceNames:[] NonResourceURLs:[]}]. Want: [{Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[principals roletemplates] ResourceNames:[] NonResourceURLs:[]} {Verbs:[*] APIGroups:[management.cattle.io] Resources:[preferences] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[settings] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[features] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[templates templateversions catalogs] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[clusters] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[nodedrivers] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[kontainerdrivers] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[podsecuritypolicytemplates] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[nodetemplates] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[fleetworkspaces] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[] Resources:[secrets] ResourceNames:[] NonResourceURLs:[]} {Verbs:[create] APIGroups:[management.cattle.io] Resources:[multiclusterapps globaldnses globaldnsproviders clustertemplaterevisions] ResourceNames:[] NonResourceURLs:[]} {Verbs:[*] APIGroups:[project.cattle.io] Resources:[sourcecodecredentials] ResourceNames:[] NonResourceURLs:[]} {Verbs:[*] APIGroups:[project.cattle.io] Resources:[sourcecoderepositories] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[rkek8ssystemimages] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[rkek8sserviceoptions] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[rkeaddons] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[cisconfigs] ResourceNames:[] NonResourceURLs:[]} {Verbs:[get list watch] APIGroups:[management.cattle.io] Resources:[cisbenchmarkversions] ResourceNames:[] NonResourceURLs:[]}]
+2021/05/06 06:09:21 [INFO] [mgmt-auth-gr-controller] Creating clusterRole cattle-globalrole-restricted-admin for corresponding GlobalRole
+2021/05/06 06:09:21 [INFO] update kontainerdriver aliyunkubernetescontainerservice
+2021/05/06 06:09:21 [INFO] create kontainerdriver linodekubernetesengine
+2021/05/06 06:09:21 [INFO] update kontainerdriver azurekubernetesservice
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=GlobalDnsProvider controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterAlertRule controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=EtcdBackup controller
+2021/05/06 06:09:21 [INFO] Starting apps/v1, Kind=DaemonSet controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ComposeConfig controller
+2021/05/06 06:09:21 [INFO] Starting catalog.cattle.io/v1, Kind=Operation controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterScan controller
+2021/05/06 06:09:21 [INFO] Starting management.cattle.io/v3, Kind=ClusterAlertGroup controller
+2021/05/06 06:09:21 [INFO] Starting /v1, Kind=Pod controller
+2021/05/06 06:09:21 [INFO] Starting catalog.cattle.io/v1, Kind=App controller
+2021/05/06 06:09:21 [INFO] [mgmt-cluster-rbac-delete] Creating namespace local
+2021/05/06 06:09:21 [INFO] Rancher startup complete
+2021/05/06 06:09:22 [INFO] update kontainerdriver tencentkubernetesengine
+2021/05/06 06:09:22 [INFO] Copying management-state/machine-drivers/b03f14bcf6ef1e6e4df77b68901337fbee82208e647a4fad726a01efea053cb0-kontainer-engine-driver-tencent => /opt/jail/driver-jail/management-state/bin/kontainer-engine-driver-tencent-tmp
+2021/05/06 06:09:22 [INFO] create kontainerdriver opentelekomcloudcontainerengine
+2021/05/06 06:09:22 [INFO] [mgmt-cluster-rbac-delete] Creating Default project for cluster local
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Creating namespace p-cbb2x
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating roleBinding rolebinding-wbnlz for project membership in project p-4kfj2 for subject user-ndspp
+2021/05/06 06:09:22 [INFO] update kontainerdriver huaweicontainercloudengine
+2021/05/06 06:09:22 [INFO] Copying management-state/machine-drivers/6a9041c4ebcba306df6bd2ea8c2753754ece0381076e80eeebdfc95d091db57b-docker-machine-driver-aliyunecs => /opt/drivers/management-state/bin/docker-machine-driver-aliyunecs-tmp
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating roleBinding rolebinding-tbdls for project membership in project p-4kfj2 for subject u-zft7hndmjk
+2021/05/06 06:09:22 [INFO] Copying management-state/machine-drivers/ce718ae6d0fda1ceef6081c972eb9e4f8574a8314810e591523da55044803438-kontainer-engine-driver-huawei => /opt/jail/driver-jail/management-state/bin/kontainer-engine-driver-huawei-tmp
+2021/05/06 06:09:22 [INFO] [mgmt-cluster-rbac-delete] Creating System project for cluster local
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating roleBinding rolebinding-lx5qr for project membership in project p-2ttf5 for subject u-nvqxri73we
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Creating creator projectRoleTemplateBinding for user user-ndspp for project p-cbb2x
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating roleBinding rolebinding-wbnlz for project membership in project p-4kfj2 for subject user-ndspp
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating roleBinding rolebinding-tbdls for project membership in project p-4kfj2 for subject u-zft7hndmjk
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating roleBinding rolebinding-d75r6 for project membership in project p-2ttf5 for subject user-ndspp
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating roleBinding rolebinding-lx5qr for project membership in project p-2ttf5 for subject u-nvqxri73we
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Creating namespace p-47nwd
+2021/05/06 06:09:22 [INFO] [mgmt-cluster-rbac-delete] Updating cluster local
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Creating creator projectRoleTemplateBinding for user user-ndspp for project p-47nwd
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Setting InitialRolesPopulated condition on project p-cbb2x
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Updating project p-cbb2x
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating role/clusterRole p-cbb2x-projectowner
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Creating creator clusterRoleTemplateBinding for user user-ndspp for cluster local
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Setting InitialRolesPopulated condition on project p-47nwd
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Updating project p-cbb2x
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Updating project p-47nwd
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating role/clusterRole p-47nwd-projectowner
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for membership in project p-cbb2x for subject user-ndspp
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for membership in project p-47nwd for subject user-ndspp
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Creating role/clusterRole local-clusterowner
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating role/clusterRole local-clustermember
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating role/clusterRole local-clustermember
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Creating clusterRoleBinding for membership in cluster local for subject user-ndspp
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating clusterRoleBinding for membership in cluster local for subject user-ndspp
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Setting InitialRolesPopulated condition on cluster 
+2021/05/06 06:09:22 [INFO] [mgmt-cluster-rbac-delete] Updating cluster local
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Creating role cluster-owner in namespace local
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating role project-owner in namespace local
+2021/05/06 06:09:22 [ERROR] error syncing 'p-47nwd/creator-project-owner': handler mgmt-auth-prtb-controller: clusterroles.rbac.authorization.k8s.io "local-clustermember" already exists, requeuing
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Updating clusterRoleBinding clusterrolebinding-qrrhl for cluster membership in cluster local for subject user-ndspp
+2021/05/06 06:09:22 [INFO] [mgmt-project-rbac-create] Updating project p-47nwd
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Creating roleBinding for subject user-ndspp with role cluster-owner in namespace 
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject user-ndspp with role project-owner in namespace 
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating role project-owner in namespace local
+2021/05/06 06:09:22 [INFO] [mgmt-auth-crtb-controller] Creating role cluster-owner in namespace p-cbb2x
+2021/05/06 06:09:22 [INFO] [mgmt-auth-prtb-controller] Creating role admin in namespace p-cbb2x
+2021/05/06 06:09:22 [INFO] kontainerdriver tencentkubernetesengine downloaded and registered at /management-state/bin/kontainer-engine-driver-tencent
+2021/05/06 06:09:23 [INFO] kontainerdriver huaweicontainercloudengine downloaded and registered at /management-state/bin/kontainer-engine-driver-huawei
+2021/05/06 06:09:23 [INFO] update kontainerdriver aliyunkubernetescontainerservice
+2021/05/06 06:09:23 [INFO] Copying management-state/machine-drivers/645f0a39e61829d8d286ccb0328e1e8c722ae0673f7d971fc8ccf8dff7279001-kontainer-engine-driver-aliyun => /opt/jail/driver-jail/management-state/bin/kontainer-engine-driver-aliyun-tmp
+2021/05/06 06:09:23 [INFO] [mgmt-auth-prtb-controller] Creating role project-owner in namespace p-cbb2x
+2021/05/06 06:09:23 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject user-ndspp with role project-owner in namespace 
+2021/05/06 06:09:23 [INFO] update kontainerdriver linodekubernetesengine
+2021/05/06 06:09:23 [INFO] update kontainerdriver opentelekomcloudcontainerengine
+2021/05/06 06:09:23 [INFO] update kontainerdriver tencentkubernetesengine
+2021/05/06 06:09:23 [INFO] [mgmt-auth-crtb-controller] Creating roleBinding for subject user-ndspp with role cluster-owner in namespace 
+2021/05/06 06:09:23 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject user-ndspp with role admin in namespace 
+2021/05/06 06:09:23 [INFO] [mgmt-auth-prtb-controller] Creating role admin in namespace p-47nwd
+2021/05/06 06:09:23 [INFO] [mgmt-auth-crtb-controller] Creating role cluster-owner in namespace p-47nwd
+2021/05/06 06:09:23 [INFO] kontainerdriver aliyunkubernetescontainerservice downloaded and registered at /management-state/bin/kontainer-engine-driver-aliyun
+2021/05/06 06:09:23 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject user-ndspp with role project-owner in namespace 
+2021/05/06 06:09:23 [INFO] update kontainerdriver huaweicontainercloudengine
+2021/05/06 06:09:24 [INFO] [mgmt-auth-prtb-controller] Creating role project-owner in namespace p-47nwd
+2021/05/06 06:09:24 [INFO] [mgmt-auth-crtb-controller] Creating roleBinding for subject user-ndspp with role cluster-owner in namespace 
+2021/05/06 06:09:24 [INFO] Updating global catalog system-library
+2021/05/06 06:09:24 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject user-ndspp with role admin in namespace 
+2021/05/06 06:09:24 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject user-ndspp with role project-owner in namespace 
+2021/05/06 06:09:24 [INFO] [mgmt-cluster-rbac-delete] Updating cluster local
+2021/05/06 06:09:24 [INFO] Stopping cluster agent for local
+2021/05/06 06:09:25 [INFO] Stopping cluster agent for local
+2021/05/06 06:09:26 [INFO] kontainerdriver amazonelasticcontainerservice listening on address 127.0.0.1:43189
+2021/05/06 06:09:26 [INFO] kontainerdriver googlekubernetesengine listening on address 127.0.0.1:40093
+2021/05/06 06:09:26 [INFO] kontainerdriver amazonelasticcontainerservice stopped
+2021/05/06 06:09:26 [INFO] dynamic schema for kontainerdriver amazonelasticcontainerservice updating
+2021/05/06 06:09:26 [INFO] kontainerdriver googlekubernetesengine stopped
+2021/05/06 06:09:26 [INFO] dynamic schema for kontainerdriver googlekubernetesengine updating
+2021/05/06 06:09:27 [INFO] kontainerdriver azurekubernetesservice listening on address 127.0.0.1:34265
+2021/05/06 06:09:27 [INFO] kontainerdriver azurekubernetesservice stopped
+2021/05/06 06:09:27 [INFO] dynamic schema for kontainerdriver azurekubernetesservice updating
+2021/05/06 06:09:27 [INFO] update kontainerdriver aliyunkubernetescontainerservice
+2021/05/06 06:09:27 [INFO] Stopping cluster agent for local
+2021/05/06 06:09:27 [INFO] Refreshing driverMetadata in 1440 minutes
+2021/05/06 06:09:28 [INFO] driverMetadata: refreshing data from upstream https://releases.rancher.com/kontainer-driver-metadata/release-v2.5/data.json
+2021/05/06 06:09:28 [INFO] Retrieve data.json from local path /var/lib/rancher-data/driver-metadata/data.json
+2021/05/06 06:09:28 [INFO] kontainerdriver tencentkubernetesengine listening on address 127.0.0.1:46195
+2021/05/06 06:09:28 [INFO] kontainerdriver tencentkubernetesengine stopped
+2021/05/06 06:09:28 [INFO] dynamic schema for kontainerdriver tencentkubernetesengine updating
+2021/05/06 06:09:28 [ERROR] error parsing azure-group-cache-size, skipping update strconv.Atoi: parsing "": invalid syntax
+2021/05/06 06:09:29 [INFO] kontainerdriver huaweicontainercloudengine listening on address 127.0.0.1:39667
+2021/05/06 06:09:29 [INFO] kontainerdriver huaweicontainercloudengine stopped
+2021/05/06 06:09:29 [INFO] dynamic schema for kontainerdriver huaweicontainercloudengine updating
+2021/05/06 06:09:29 [INFO] update kontainerdriver tencentkubernetesengine
+2021/05/06 06:09:30 [INFO] Handling backend connection request [c-zbtll]
+2021/05/06 06:09:30 [INFO] Handling backend connection request [c-zbtll:m-2bcrr]
+2021/05/06 06:09:30 [INFO] Handling backend connection request [c-zbtll:m-2bcrr]
+2021/05/06 06:09:30 [INFO] Handling backend connection request [c-zbtll:m-pftcm]
+2021/05/06 06:09:30 [INFO] Handling backend connection request [c-zbtll:m-pftcm]
+2021/05/06 06:09:30 [INFO] Handling backend connection request [c-zbtll:m-qldxt]
+2021/05/06 06:09:30 [INFO] Stopping cluster agent for local
+2021/05/06 06:09:30 [INFO] update kontainerdriver huaweicontainercloudengine
+2021/05/06 06:09:31 [INFO] Registering project network policy
+2021/05/06 06:09:31 [INFO] Not registering CIS controller for non RKE cluster: local
+2021/05/06 06:09:31 [INFO] registering podsecuritypolicy cluster handler for cluster local
+2021/05/06 06:09:31 [INFO] registering podsecuritypolicy project handler for cluster local
+2021/05/06 06:09:31 [INFO] registering podsecuritypolicy namespace handler for cluster local
+2021/05/06 06:09:31 [INFO] registering podsecuritypolicy serviceaccount handler for cluster local
+2021/05/06 06:09:31 [INFO] registering podsecuritypolicy template handler for cluster local
+2021/05/06 06:09:31 [INFO] Registering monitoring for cluster "local"
+2021/05/06 06:09:31 [INFO] Registering istio for cluster "local"
+2021/05/06 06:09:31 [INFO] Registering GPUManagement for cluster "local"
+2021/05/06 06:09:31 [INFO] Registering F5 CIS for cluster "local"
+2021/05/06 06:09:31 [INFO] Creating CRD virtualservers.cis.f5.com
+2021/05/06 06:09:31 [INFO] Creating CRD transportservers.cis.f5.com
+2021/05/06 06:09:31 [INFO] Creating CRD tlsprofiles.cis.f5.com
+2021/05/06 06:09:31 [INFO] Creating CRD externaldnss.cis.f5.com
+2021/05/06 06:09:31 [INFO] Waiting for CRD virtualservers.cis.f5.com to become available
+2021/05/06 06:09:31 [INFO] Refreshing all schemas
+2021/05/06 06:09:31 [INFO] Done waiting for CRD virtualservers.cis.f5.com to become available
+2021/05/06 06:09:31 [INFO] Waiting for CRD transportservers.cis.f5.com to become available
+2021/05/06 06:09:32 [INFO] Refreshing all schemas
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Binding
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind ComponentStatus
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind ConfigMap
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Endpoints
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Event
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind LimitRange
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Namespace
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Node
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind PersistentVolumeClaim
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind PersistentVolume
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Pod
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind PodTemplate
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind ReplicationController
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind ResourceQuota
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Secret
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind ServiceAccount
+2021/05/06 06:09:32 [INFO] APIVersion /v1 Kind Service
+2021/05/06 06:09:32 [INFO] APIVersion apiregistration.k8s.io/v1 Kind APIService
+2021/05/06 06:09:32 [INFO] APIVersion apiregistration.k8s.io/v1beta1 Kind APIService
+2021/05/06 06:09:32 [INFO] APIVersion extensions/v1beta1 Kind Ingress
+2021/05/06 06:09:32 [INFO] APIVersion apps/v1 Kind ControllerRevision
+2021/05/06 06:09:32 [INFO] APIVersion apps/v1 Kind DaemonSet
+2021/05/06 06:09:32 [INFO] APIVersion apps/v1 Kind Deployment
+2021/05/06 06:09:32 [INFO] APIVersion apps/v1 Kind ReplicaSet
+2021/05/06 06:09:32 [INFO] APIVersion apps/v1 Kind StatefulSet
+2021/05/06 06:09:32 [INFO] APIVersion events.k8s.io/v1beta1 Kind Event
+2021/05/06 06:09:32 [INFO] APIVersion authentication.k8s.io/v1 Kind TokenReview
+2021/05/06 06:09:32 [INFO] APIVersion authentication.k8s.io/v1beta1 Kind TokenReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1 Kind LocalSubjectAccessReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectAccessReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectRulesReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1 Kind SubjectAccessReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind LocalSubjectAccessReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectAccessReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectRulesReview
+2021/05/06 06:09:32 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SubjectAccessReview
+2021/05/06 06:09:32 [INFO] APIVersion autoscaling/v1 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:32 [INFO] APIVersion autoscaling/v2beta1 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:32 [INFO] APIVersion autoscaling/v2beta2 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:32 [INFO] APIVersion batch/v1 Kind Job
+2021/05/06 06:09:32 [INFO] APIVersion batch/v1beta1 Kind CronJob
+2021/05/06 06:09:32 [INFO] APIVersion certificates.k8s.io/v1beta1 Kind CertificateSigningRequest
+2021/05/06 06:09:32 [INFO] APIVersion networking.k8s.io/v1 Kind NetworkPolicy
+2021/05/06 06:09:32 [INFO] APIVersion networking.k8s.io/v1beta1 Kind IngressClass
+2021/05/06 06:09:32 [INFO] APIVersion networking.k8s.io/v1beta1 Kind Ingress
+2021/05/06 06:09:32 [INFO] APIVersion policy/v1beta1 Kind PodDisruptionBudget
+2021/05/06 06:09:32 [INFO] APIVersion policy/v1beta1 Kind PodSecurityPolicy
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRoleBinding
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRole
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind RoleBinding
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind Role
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRoleBinding
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRole
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind RoleBinding
+2021/05/06 06:09:32 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind Role
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1 Kind CSIDriver
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1 Kind CSINode
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1 Kind StorageClass
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1 Kind VolumeAttachment
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSIDriver
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSINode
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1beta1 Kind StorageClass
+2021/05/06 06:09:32 [INFO] APIVersion storage.k8s.io/v1beta1 Kind VolumeAttachment
+2021/05/06 06:09:32 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind MutatingWebhookConfiguration
+2021/05/06 06:09:32 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:09:32 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind MutatingWebhookConfiguration
+2021/05/06 06:09:32 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:09:32 [INFO] APIVersion apiextensions.k8s.io/v1 Kind CustomResourceDefinition
+2021/05/06 06:09:32 [INFO] APIVersion apiextensions.k8s.io/v1beta1 Kind CustomResourceDefinition
+2021/05/06 06:09:32 [INFO] APIVersion scheduling.k8s.io/v1 Kind PriorityClass
+2021/05/06 06:09:32 [INFO] APIVersion scheduling.k8s.io/v1beta1 Kind PriorityClass
+2021/05/06 06:09:32 [INFO] APIVersion coordination.k8s.io/v1 Kind Lease
+2021/05/06 06:09:32 [INFO] APIVersion coordination.k8s.io/v1beta1 Kind Lease
+2021/05/06 06:09:32 [INFO] APIVersion node.k8s.io/v1beta1 Kind RuntimeClass
+2021/05/06 06:09:32 [INFO] APIVersion discovery.k8s.io/v1beta1 Kind EndpointSlice
+2021/05/06 06:09:32 [INFO] APIVersion catalog.cattle.io/v1 Kind App
+2021/05/06 06:09:32 [INFO] APIVersion catalog.cattle.io/v1 Kind Operation
+2021/05/06 06:09:32 [INFO] APIVersion catalog.cattle.io/v1 Kind ClusterRepo
+2021/05/06 06:09:32 [INFO] APIVersion cis.f5.com/v1 Kind TLSProfile
+2021/05/06 06:09:32 [INFO] APIVersion cis.f5.com/v1 Kind TransportServer
+2021/05/06 06:09:32 [INFO] APIVersion cis.f5.com/v1 Kind ExternalDNS
+2021/05/06 06:09:32 [INFO] APIVersion cis.f5.com/v1 Kind VirtualServer
+2021/05/06 06:09:32 [INFO] APIVersion helm.cattle.io/v1 Kind HelmChart
+2021/05/06 06:09:32 [INFO] APIVersion k3s.cattle.io/v1 Kind Addon
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind NodeTemplate
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDnsProvider
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlert
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind CisConfig
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectNetworkPolicy
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Setting
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind TemplateContent
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ComposeConfig
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind EtcdBackup
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind CisBenchmarkVersion
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Token
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind TemplateVersion
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplate
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind NotificationTemplate
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Node
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterAppRevision
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind AuthConfig
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRoleBinding
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRegistrationToken
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterApp
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterMonitorGraph
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertGroup
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind SamlToken
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind NodePool
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind KontainerDriver
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplateVersion
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplateProjectBinding
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectMonitorGraph
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sServiceOption
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertRule
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDns
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind User
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRole
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplate
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Notifier
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterLogging
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlert
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectRoleTemplateBinding
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertGroup
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Feature
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Preference
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterScan
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectCatalog
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Group
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplateRevision
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind UserAttribute
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Catalog
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplate
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sSystemImage
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Template
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind RoleTemplate
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Cluster
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRoleTemplateBinding
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind NodeDriver
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind FleetWorkspace
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectLogging
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind GroupMember
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertRule
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind DynamicSchema
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind MonitorMetric
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind ClusterCatalog
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind RkeAddon
+2021/05/06 06:09:32 [INFO] APIVersion management.cattle.io/v3 Kind Project
+2021/05/06 06:09:32 [INFO] APIVersion mgt.pandaria.io/v3 Kind SensitiveFilter
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind Pipeline
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeRepository
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind AppRevision
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeCredential
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind PipelineExecution
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind App
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeProviderConfig
+2021/05/06 06:09:32 [INFO] APIVersion project.cattle.io/v3 Kind PipelineSetting
+2021/05/06 06:09:32 [INFO] Done waiting for CRD transportservers.cis.f5.com to become available
+2021/05/06 06:09:32 [INFO] Waiting for CRD tlsprofiles.cis.f5.com to become available
+2021/05/06 06:09:32 [INFO] kontainerdriver aliyunkubernetescontainerservice listening on address 127.0.0.1:44653
+2021/05/06 06:09:32 [INFO] kontainerdriver aliyunkubernetescontainerservice stopped
+2021/05/06 06:09:32 [INFO] dynamic schema for kontainerdriver aliyunkubernetescontainerservice updating
+2021/05/06 06:09:32 [INFO] update kontainerdriver aliyunkubernetescontainerservice
+2021/05/06 06:09:33 [INFO] Done waiting for CRD tlsprofiles.cis.f5.com to become available
+2021/05/06 06:09:33 [INFO] Waiting for CRD externaldnss.cis.f5.com to become available
+2021/05/06 06:09:33 [INFO] Catalog sync done. 0 templates created, 10 templates updated, 0 templates deleted, 0 templates failed
+2021/05/06 06:09:33 [INFO] Watching metadata for cis.f5.com/v1, Kind=TLSProfile
+2021/05/06 06:09:33 [INFO] Watching metadata for cis.f5.com/v1, Kind=ExternalDNS
+2021/05/06 06:09:33 [INFO] Watching metadata for cis.f5.com/v1, Kind=VirtualServer
+2021/05/06 06:09:33 [INFO] Watching metadata for cis.f5.com/v1, Kind=TransportServer
+2021/05/06 06:09:33 [INFO] Done waiting for CRD externaldnss.cis.f5.com to become available
+2021/05/06 06:09:33 [INFO] Creating CRD prometheuses.monitoring.coreos.com
+2021/05/06 06:09:33 [INFO] Creating CRD prometheusrules.monitoring.coreos.com
+2021/05/06 06:09:33 [INFO] Creating CRD alertmanagers.monitoring.coreos.com
+2021/05/06 06:09:33 [INFO] Creating CRD servicemonitors.monitoring.coreos.com
+2021/05/06 06:09:33 [INFO] Waiting for CRD alertmanagers.monitoring.coreos.com to become available
+2021/05/06 06:09:34 [INFO] Refreshing all schemas
+2021/05/06 06:09:34 [INFO] Done waiting for CRD alertmanagers.monitoring.coreos.com to become available
+2021/05/06 06:09:34 [INFO] Waiting for CRD servicemonitors.monitoring.coreos.com to become available
+2021/05/06 06:09:34 [INFO] Refreshing all schemas
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Binding
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind ComponentStatus
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind ConfigMap
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Endpoints
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Event
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind LimitRange
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Namespace
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Node
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind PersistentVolumeClaim
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind PersistentVolume
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Pod
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind PodTemplate
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind ReplicationController
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind ResourceQuota
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Secret
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind ServiceAccount
+2021/05/06 06:09:34 [INFO] APIVersion /v1 Kind Service
+2021/05/06 06:09:34 [INFO] APIVersion apiregistration.k8s.io/v1 Kind APIService
+2021/05/06 06:09:34 [INFO] APIVersion apiregistration.k8s.io/v1beta1 Kind APIService
+2021/05/06 06:09:34 [INFO] APIVersion extensions/v1beta1 Kind Ingress
+2021/05/06 06:09:34 [INFO] APIVersion apps/v1 Kind ControllerRevision
+2021/05/06 06:09:34 [INFO] APIVersion apps/v1 Kind DaemonSet
+2021/05/06 06:09:34 [INFO] APIVersion apps/v1 Kind Deployment
+2021/05/06 06:09:34 [INFO] APIVersion apps/v1 Kind ReplicaSet
+2021/05/06 06:09:34 [INFO] APIVersion apps/v1 Kind StatefulSet
+2021/05/06 06:09:34 [INFO] APIVersion events.k8s.io/v1beta1 Kind Event
+2021/05/06 06:09:34 [INFO] APIVersion authentication.k8s.io/v1 Kind TokenReview
+2021/05/06 06:09:34 [INFO] APIVersion authentication.k8s.io/v1beta1 Kind TokenReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1 Kind LocalSubjectAccessReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectAccessReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectRulesReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1 Kind SubjectAccessReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind LocalSubjectAccessReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectAccessReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectRulesReview
+2021/05/06 06:09:34 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SubjectAccessReview
+2021/05/06 06:09:34 [INFO] APIVersion autoscaling/v1 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:34 [INFO] APIVersion autoscaling/v2beta1 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:34 [INFO] APIVersion autoscaling/v2beta2 Kind HorizontalPodAutoscaler
+2021/05/06 06:09:34 [INFO] APIVersion batch/v1 Kind Job
+2021/05/06 06:09:34 [INFO] APIVersion batch/v1beta1 Kind CronJob
+2021/05/06 06:09:34 [INFO] APIVersion certificates.k8s.io/v1beta1 Kind CertificateSigningRequest
+2021/05/06 06:09:34 [INFO] APIVersion networking.k8s.io/v1 Kind NetworkPolicy
+2021/05/06 06:09:34 [INFO] APIVersion networking.k8s.io/v1beta1 Kind IngressClass
+2021/05/06 06:09:34 [INFO] APIVersion networking.k8s.io/v1beta1 Kind Ingress
+2021/05/06 06:09:34 [INFO] APIVersion policy/v1beta1 Kind PodDisruptionBudget
+2021/05/06 06:09:34 [INFO] APIVersion policy/v1beta1 Kind PodSecurityPolicy
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRoleBinding
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRole
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind RoleBinding
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind Role
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRoleBinding
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRole
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind RoleBinding
+2021/05/06 06:09:34 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind Role
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1 Kind CSIDriver
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1 Kind CSINode
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1 Kind StorageClass
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1 Kind VolumeAttachment
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSIDriver
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSINode
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1beta1 Kind StorageClass
+2021/05/06 06:09:34 [INFO] APIVersion storage.k8s.io/v1beta1 Kind VolumeAttachment
+2021/05/06 06:09:34 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind MutatingWebhookConfiguration
+2021/05/06 06:09:34 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:09:34 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind MutatingWebhookConfiguration
+2021/05/06 06:09:34 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:09:34 [INFO] APIVersion apiextensions.k8s.io/v1 Kind CustomResourceDefinition
+2021/05/06 06:09:34 [INFO] APIVersion apiextensions.k8s.io/v1beta1 Kind CustomResourceDefinition
+2021/05/06 06:09:34 [INFO] APIVersion scheduling.k8s.io/v1 Kind PriorityClass
+2021/05/06 06:09:34 [INFO] APIVersion scheduling.k8s.io/v1beta1 Kind PriorityClass
+2021/05/06 06:09:34 [INFO] APIVersion coordination.k8s.io/v1 Kind Lease
+2021/05/06 06:09:34 [INFO] APIVersion coordination.k8s.io/v1beta1 Kind Lease
+2021/05/06 06:09:34 [INFO] APIVersion node.k8s.io/v1beta1 Kind RuntimeClass
+2021/05/06 06:09:34 [INFO] APIVersion discovery.k8s.io/v1beta1 Kind EndpointSlice
+2021/05/06 06:09:34 [INFO] APIVersion catalog.cattle.io/v1 Kind App
+2021/05/06 06:09:34 [INFO] APIVersion catalog.cattle.io/v1 Kind Operation
+2021/05/06 06:09:34 [INFO] APIVersion catalog.cattle.io/v1 Kind ClusterRepo
+2021/05/06 06:09:34 [INFO] APIVersion cis.f5.com/v1 Kind TLSProfile
+2021/05/06 06:09:34 [INFO] APIVersion cis.f5.com/v1 Kind TransportServer
+2021/05/06 06:09:34 [INFO] APIVersion cis.f5.com/v1 Kind ExternalDNS
+2021/05/06 06:09:34 [INFO] APIVersion cis.f5.com/v1 Kind VirtualServer
+2021/05/06 06:09:34 [INFO] APIVersion helm.cattle.io/v1 Kind HelmChart
+2021/05/06 06:09:34 [INFO] APIVersion k3s.cattle.io/v1 Kind Addon
+2021/05/06 06:09:34 [INFO] APIVersion monitoring.coreos.com/v1 Kind PrometheusRule
+2021/05/06 06:09:34 [INFO] APIVersion monitoring.coreos.com/v1 Kind ServiceMonitor
+2021/05/06 06:09:34 [INFO] APIVersion monitoring.coreos.com/v1 Kind Prometheus
+2021/05/06 06:09:34 [INFO] APIVersion monitoring.coreos.com/v1 Kind Alertmanager
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind NodeTemplate
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDnsProvider
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlert
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind CisConfig
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectNetworkPolicy
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Setting
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind TemplateContent
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ComposeConfig
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind EtcdBackup
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind CisBenchmarkVersion
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Token
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind TemplateVersion
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplate
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind NotificationTemplate
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Node
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterAppRevision
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind AuthConfig
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRoleBinding
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRegistrationToken
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterApp
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterMonitorGraph
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertGroup
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind SamlToken
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind NodePool
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind KontainerDriver
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplateVersion
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplateProjectBinding
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectMonitorGraph
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sServiceOption
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertRule
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDns
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind User
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRole
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplate
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Notifier
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterLogging
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlert
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectRoleTemplateBinding
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertGroup
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Feature
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Preference
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterScan
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectCatalog
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Group
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplateRevision
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind UserAttribute
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Catalog
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplate
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sSystemImage
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Template
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind RoleTemplate
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Cluster
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRoleTemplateBinding
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind NodeDriver
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind FleetWorkspace
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectLogging
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind GroupMember
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertRule
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind DynamicSchema
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind MonitorMetric
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind ClusterCatalog
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind RkeAddon
+2021/05/06 06:09:34 [INFO] APIVersion management.cattle.io/v3 Kind Project
+2021/05/06 06:09:34 [INFO] APIVersion mgt.pandaria.io/v3 Kind SensitiveFilter
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind Pipeline
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeRepository
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind AppRevision
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeCredential
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind PipelineExecution
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind App
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeProviderConfig
+2021/05/06 06:09:34 [INFO] APIVersion project.cattle.io/v3 Kind PipelineSetting
+2021/05/06 06:09:35 [INFO] Done waiting for CRD servicemonitors.monitoring.coreos.com to become available
+2021/05/06 06:09:35 [INFO] Waiting for CRD prometheusrules.monitoring.coreos.com to become available
+2021/05/06 06:09:35 [INFO] Watching metadata for monitoring.coreos.com/v1, Kind=Prometheus
+2021/05/06 06:09:35 [INFO] Watching metadata for monitoring.coreos.com/v1, Kind=PrometheusRule
+2021/05/06 06:09:35 [INFO] Watching metadata for monitoring.coreos.com/v1, Kind=Alertmanager
+2021/05/06 06:09:35 [INFO] Watching metadata for monitoring.coreos.com/v1, Kind=ServiceMonitor
+2021/05/06 06:09:35 [INFO] Done waiting for CRD prometheusrules.monitoring.coreos.com to become available
+2021/05/06 06:09:35 [INFO] Registering namespaceHandler for adding labels 
+2021/05/06 06:09:35 [INFO] Starting cluster controllers for local
+2021/05/06 06:09:35 [INFO] Starting management.cattle.io/v3, Kind=ProjectAlertRule controller
+2021/05/06 06:09:35 [INFO] Starting management.cattle.io/v3, Kind=ProjectNetworkPolicy controller
+2021/05/06 06:09:35 [INFO] Starting project.cattle.io/v3, Kind=PipelineSetting controller
+2021/05/06 06:09:35 [INFO] Starting management.cattle.io/v3, Kind=ProjectAlertGroup controller
+2021/05/06 06:09:35 [INFO] Starting management.cattle.io/v3, Kind=SamlToken controller
+2021/05/06 06:09:35 [INFO] Starting management.cattle.io/v3, Kind=ProjectAlert controller
+2021/05/06 06:09:35 [INFO] Starting management.cattle.io/v3, Kind=NotificationTemplate controller
+2021/05/06 06:09:35 [INFO] Starting management.cattle.io/v3, Kind=Notifier controller
+2021/05/06 06:09:35 [INFO] Starting project.cattle.io/v3, Kind=SourceCodeProviderConfig controller
+2021/05/06 06:09:35 [INFO] Registering project network policy
+2021/05/06 06:09:35 [INFO] Registering CIS controllers for cluster: c-zbtll
+2021/05/06 06:09:35 [INFO] registering podsecuritypolicy cluster handler for cluster c-zbtll
+2021/05/06 06:09:35 [INFO] registering podsecuritypolicy project handler for cluster c-zbtll
+2021/05/06 06:09:35 [INFO] registering podsecuritypolicy namespace handler for cluster c-zbtll
+2021/05/06 06:09:35 [INFO] registering podsecuritypolicy serviceaccount handler for cluster c-zbtll
+2021/05/06 06:09:35 [INFO] registering podsecuritypolicy template handler for cluster c-zbtll
+2021/05/06 06:09:35 [INFO] Registering monitoring for cluster "c-zbtll"
+2021/05/06 06:09:35 [INFO] Registering istio for cluster "c-zbtll"
+2021/05/06 06:09:35 [INFO] Registering GPUManagement for cluster "c-zbtll"
+2021/05/06 06:09:35 [INFO] Registering F5 CIS for cluster "c-zbtll"
+2021/05/06 06:09:35 [INFO] Redeploy Rancher Agents is needed for c-zbtll: forceDeploy=false, agent/auth image changed=true, private repo changed=false, agent features changed=true
+2021/05/06 06:09:36 [INFO] Starting cluster agent for local [owner=true]
+2021/05/06 06:09:36 [INFO] Starting extensions/v1beta1, Kind=Ingress controller
+2021/05/06 06:09:36 [INFO] Starting cis.f5.com/v1, Kind=TransportServer controller
+2021/05/06 06:09:36 [INFO] Starting apiregistration.k8s.io/v1, Kind=APIService controller
+2021/05/06 06:09:36 [INFO] Starting monitoring.coreos.com/v1, Kind=ServiceMonitor controller
+2021/05/06 06:09:36 [INFO] Starting apps/v1, Kind=ReplicaSet controller
+2021/05/06 06:09:36 [INFO] Starting networking.k8s.io/v1, Kind=NetworkPolicy controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=ServiceAccount controller
+2021/05/06 06:09:36 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=ClusterRoleBinding controller
+2021/05/06 06:09:36 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=RoleBinding controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=ConfigMap controller
+2021/05/06 06:09:36 [INFO] Starting cis.f5.com/v1, Kind=VirtualServer controller
+2021/05/06 06:09:36 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=Role controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=Namespace controller
+2021/05/06 06:09:36 [INFO] Starting batch/v1, Kind=Job controller
+2021/05/06 06:09:36 [INFO] Starting batch/v1beta1, Kind=CronJob controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=Endpoints controller
+2021/05/06 06:09:36 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=ClusterRole controller
+2021/05/06 06:09:36 [INFO] Starting apps/v1, Kind=StatefulSet controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=Node controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=Event controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=LimitRange controller
+2021/05/06 06:09:36 [INFO] Starting apps/v1, Kind=Deployment controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=Pod controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=Secret controller
+2021/05/06 06:09:36 [INFO] Starting policy/v1beta1, Kind=PodSecurityPolicy controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=ResourceQuota controller
+2021/05/06 06:09:36 [INFO] Starting apps/v1, Kind=DaemonSet controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=Service controller
+2021/05/06 06:09:36 [INFO] Starting /v1, Kind=ReplicationController controller
+2021/05/06 06:09:36 [INFO] Creating clusterRole for roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:36 [INFO] Creating clusterRole for roleTemplate Cluster Owner (cluster-owner).
+2021/05/06 06:09:36 [INFO] Creating clusterRole for roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:36 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:36 [INFO] Creating clusterRole for roleTemplate Cluster Owner (cluster-owner).
+2021/05/06 06:09:36 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:36 [INFO] Creating roleBinding User user-ndspp Role cluster-owner
+2021/05/06 06:09:36 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:36 [INFO] Created machine for node [local-node]
+2021/05/06 06:09:36 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:36 [INFO] Starting cluster controllers for c-zbtll
+2021/05/06 06:09:36 [INFO] Creating roleBinding User user-ndspp Role cluster-owner
+2021/05/06 06:09:36 [INFO] Creating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:36 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:36 [INFO] Creating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:36 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:36 [INFO] Creating user for principal system://local
+2021/05/06 06:09:36 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:36 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:36 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-47nwd
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-7bw74
+2021/05/06 06:09:37 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-cbb2x
+2021/05/06 06:09:37 [INFO] Creating globalRoleBindings for u-b4qkhsnliz
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Starting cluster.cattle.io/v3, Kind=ClusterUserAttribute controller
+2021/05/06 06:09:37 [INFO] Starting apps/v1, Kind=Deployment controller
+2021/05/06 06:09:37 [INFO] Starting batch/v1, Kind=Job controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=Pod controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=Secret controller
+2021/05/06 06:09:37 [INFO] Starting extensions/v1beta1, Kind=Ingress controller
+2021/05/06 06:09:37 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=ClusterRoleBinding controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=ConfigMap controller
+2021/05/06 06:09:37 [INFO] Starting policy/v1beta1, Kind=PodSecurityPolicy controller
+2021/05/06 06:09:37 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=Role controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=LimitRange controller
+2021/05/06 06:09:37 [INFO] Starting networking.k8s.io/v1, Kind=NetworkPolicy controller
+2021/05/06 06:09:37 [INFO] Starting cluster.cattle.io/v3, Kind=ClusterAuthToken controller
+2021/05/06 06:09:37 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=RoleBinding controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=ReplicationController controller
+2021/05/06 06:09:37 [INFO] Starting apps/v1, Kind=DaemonSet controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=Endpoints controller
+2021/05/06 06:09:37 [INFO] Starting apiregistration.k8s.io/v1, Kind=APIService controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=Service controller
+2021/05/06 06:09:37 [INFO] Starting batch/v1beta1, Kind=CronJob controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=ServiceAccount controller
+2021/05/06 06:09:37 [INFO] Starting cis.f5.com/v1, Kind=TransportServer controller
+2021/05/06 06:09:37 [INFO] Starting apps/v1, Kind=ReplicaSet controller
+2021/05/06 06:09:37 [INFO] Starting apps/v1, Kind=StatefulSet controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=Event controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=Node controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=Namespace controller
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Starting rbac.authorization.k8s.io/v1, Kind=ClusterRole controller
+2021/05/06 06:09:37 [INFO] Starting /v1, Kind=ResourceQuota controller
+2021/05/06 06:09:37 [INFO] Starting cis.f5.com/v1, Kind=VirtualServer controller
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-7bw74
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-member because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-member because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:37 [INFO] Starting cluster agent for c-zbtll [owner=true]
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-2ttf5 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-4kfj2 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Updating role project-member in p-4kfj2 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:37 [INFO] Creating new GlobalRoleBinding for GlobalRoleBinding grb-cdgdk
+2021/05/06 06:09:37 [INFO] [mgmt-auth-grb-controller] Creating clusterRoleBinding for globalRoleBinding grb-cdgdk for user u-b4qkhsnliz with role cattle-globalrole-user
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-4kfj2 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating role project-member in p-4kfj2 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-4kfj2 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Updating role project-owner in p-4kfj2 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Updating role project-member in p-4kfj2 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role project-member
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-7bw74
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role edit
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [WARNING] error updating ns p-2ttf5 status: Operation cannot be fulfilled on namespaces "p-2ttf5": the object has been modified; please apply your changes to the latest version and try again
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role project-member
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Updating clusterRoleBinding clusterrolebinding-n94bm for project access to global resource for subject u-nvqxri73we role p-2ttf5-namespaces-edit.
+2021/05/06 06:09:37 [INFO] Updating clusterRoleBinding clusterrolebinding-jfctr for project access to global resource for subject u-nvqxri73we role project-member-promoted.
+2021/05/06 06:09:37 [INFO] Creating clusterRole for roleTemplate Create Namespaces (create-ns).
+2021/05/06 06:09:37 [INFO] Updating clusterRoleBinding clusterrolebinding-jfctr for project access to global resource for subject u-nvqxri73we role project-member-promoted.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-nvqxri73we Role project-member
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Creating clusterRole for roleTemplate Create Namespaces (create-ns).
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-nvqxri73we Role edit
+2021/05/06 06:09:37 [INFO] Updating clusterRoleBinding clusterrolebinding-brtfw for project access to global resource for subject u-nvqxri73we role create-ns.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role edit
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role edit
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role project-member
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role edit
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role edit
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-gnnw9
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-9mt5c
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:37 [INFO] Updating clusterRole project-owner-promoted for project access to global resource.
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role edit
+2021/05/06 06:09:37 [INFO] Creating roleBinding User u-zft7hndmjk Role edit
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-rb4pk
+2021/05/06 06:09:37 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-2ttf5
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-cwn7m
+2021/05/06 06:09:37 [INFO] Creating clusterRoleBinding for project access to global resource for subject user-ndspp role p-cbb2x-namespaces-edit.
+2021/05/06 06:09:37 [INFO] Deleting roleBinding clusterrolebinding-tnzsd
+2021/05/06 06:09:37 [INFO] Creating clusterRoleBinding for project access to global resource for subject user-ndspp role project-owner-promoted.
+2021/05/06 06:09:37 [INFO] [mgmt-auth-crtb-controller] Creating clusterRoleBinding for membership in cluster local for subject u-b4qkhsnliz
+2021/05/06 06:09:37 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:38 [INFO] Creating clusterRoleBinding for project access to global resource for subject user-ndspp role project-owner-promoted.
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-b4scw
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-fpjhf
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-nbdlj
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] [mgmt-auth-crtb-controller] Creating roleBinding for subject u-b4qkhsnliz with role cluster-owner in namespace 
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] Creating clusterRoleBinding for project access to global resource for subject user-ndspp role project-owner-promoted.
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-5zcmg
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-dklcc
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-rhpd6
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-g64v8
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-s7h6j
+2021/05/06 06:09:38 [INFO] Creating clusterRoleBinding for project access to global resource for subject user-ndspp role create-ns.
+2021/05/06 06:09:38 [INFO] Creating clusterRoleBinding for project access to global resource for subject user-ndspp role create-ns.
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-j7lrn
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-4mzsc
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-bvxlh
+2021/05/06 06:09:38 [INFO] [mgmt-auth-crtb-controller] Creating roleBinding for subject u-b4qkhsnliz with role cluster-owner in namespace 
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-4nn49
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-777sb
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-97kdg
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-52rsp
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-whdkn
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-hzn58
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-hzn58
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-rk8ws
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-j58mz
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-2ttf5
+2021/05/06 06:09:38 [INFO] Deleting roleBinding clusterrolebinding-s6qbm
+2021/05/06 06:09:38 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-4kfj2
+2021/05/06 06:09:38 [INFO] [mgmt-auth-crtb-controller] Creating roleBinding for subject u-b4qkhsnliz with role cluster-owner in namespace 
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-2ttf5
+2021/05/06 06:09:38 [INFO] Creating user for principal system://p-cbb2x
+2021/05/06 06:09:38 [INFO] Creating clusterRoleBinding for project access to global resource for subject user-ndspp role p-47nwd-namespaces-edit.
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-4kfj2
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-cbb2x
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-2ttf5 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] Updating role project-member in p-4kfj2 because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:38 [INFO] Creating user for principal system://p-47nwd
+2021/05/06 06:09:38 [INFO] Updating clusterRoleBinding clusterrolebinding-h9qt2 for project access to global resource for subject user-ndspp role project-owner-promoted.
+2021/05/06 06:09:38 [INFO] Updating clusterRoleBinding clusterrolebinding-h9qt2 for project access to global resource for subject user-ndspp role project-owner-promoted.
+2021/05/06 06:09:38 [INFO] Creating globalRoleBindings for u-mt2omhrl55
+2021/05/06 06:09:38 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=kube-public
+2021/05/06 06:09:38 [INFO] Updating clusterRoleBinding clusterrolebinding-vqnj4 for project access to global resource for subject user-ndspp role project-owner-promoted.
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-2ttf5 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-4kfj2 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating clusterRoleBinding clusterrolebinding-r8nvd for project access to global resource for subject user-ndspp role project-owner-promoted.
+2021/05/06 06:09:38 [INFO] Creating new GlobalRoleBinding for GlobalRoleBinding grb-226gj
+2021/05/06 06:09:38 [INFO] [mgmt-auth-grb-controller] Creating clusterRoleBinding for globalRoleBinding grb-226gj for user u-mt2omhrl55 with role cattle-globalrole-user
+2021/05/06 06:09:38 [ERROR] error syncing 'p-47nwd/creator-project-owner': handler cluster-prtb-sync: Operation cannot be fulfilled on clusterrolebindings.rbac.authorization.k8s.io "clusterrolebinding-r8nvd": StorageError: invalid object, Code: 4, Key: /registry/clusterrolebindings/clusterrolebinding-r8nvd, ResourceVersion: 0, AdditionalErrorMsg: Precondition failed: UID in precondition: cf4632c0-3ff2-4ebc-afd3-8964470699db, UID in object meta: , requeuing
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-47nwd
+2021/05/06 06:09:38 [WARNING] error updating ns rancher-operator-system status: Operation cannot be fulfilled on namespaces "rancher-operator-system": the object has been modified; please apply your changes to the latest version and try again
+2021/05/06 06:09:38 [ERROR] namespaceHandler: Sync: error adding project id label to namespace err=Operation cannot be fulfilled on namespaces "kube-public": the object has been modified; please apply your changes to the latest version and try again
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-2ttf5
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-4kfj2
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Creating globalRoleBindings for u-qyel6jdtvd
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-2ttf5 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-4kfj2 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:38 [INFO] Creating roleBinding User u-b4qkhsnliz Role cluster-owner
+2021/05/06 06:09:38 [INFO] [mgmt-auth-prtb-controller] Creating role/clusterRole p-cbb2x-projectmember
+2021/05/06 06:09:38 [INFO] Creating roleBinding User user-ndspp Role project-owner
+2021/05/06 06:09:38 [INFO] Creating new GlobalRoleBinding for GlobalRoleBinding grb-n667l
+2021/05/06 06:09:38 [INFO] [mgmt-auth-grb-controller] Creating clusterRoleBinding for globalRoleBinding grb-n667l for user u-qyel6jdtvd with role cattle-globalrole-user
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for membership in project p-cbb2x for subject u-mt2omhrl55
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-cbb2x
+2021/05/06 06:09:39 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:39 [INFO] Updating clusterRoleBinding clusterrolebinding-2sn7g for project access to global resource for subject user-ndspp role create-ns.
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating clusterRoleBinding for membership in cluster local for subject u-mt2omhrl55
+2021/05/06 06:09:39 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-cbb2x to namespace=default
+2021/05/06 06:09:39 [INFO] Updating clusterRoleBinding clusterrolebinding-2xxqt for project access to global resource for subject user-ndspp role create-ns.
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating role project-member in namespace local
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating role/clusterRole p-47nwd-projectmember
+2021/05/06 06:09:39 [INFO] Creating clusterRole for roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject u-mt2omhrl55 with role project-member in namespace 
+2021/05/06 06:09:39 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:39 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=cattle-global-nt
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role project-member
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for membership in project p-47nwd for subject u-qyel6jdtvd
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating clusterRoleBinding for membership in cluster local for subject u-qyel6jdtvd
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject u-qyel6jdtvd with role project-member in namespace 
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating role project-member in namespace p-cbb2x
+2021/05/06 06:09:39 [INFO] Creating roleBinding User user-ndspp Role admin
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role edit
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-2ttf5
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-4kfj2
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-cbb2x
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating role project-member in namespace p-47nwd
+2021/05/06 06:09:39 [INFO] error in remotedialer server [400]: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-47nwd
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating role edit in namespace p-47nwd
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating role edit in namespace p-cbb2x
+2021/05/06 06:09:39 [INFO] Deleting roleBinding clusterrolebinding-frdnh
+2021/05/06 06:09:39 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=cattle-system
+2021/05/06 06:09:39 [INFO] Active TLS secret serving-cert (ver=13568) (count 6): map[field.cattle.io/projectId:local:p-47nwd listener.cattle.io/cn-127.0.0.1:127.0.0.1 listener.cattle.io/cn-13.124.178.27:13.124.178.27 listener.cattle.io/cn-172.17.0.2:172.17.0.2 listener.cattle.io/cn-localhost:localhost listener.cattle.io/cn-rancher.cattle-system:rancher.cattle-system listener.cattle.io/hash:0c01e7a4150d2427cfe8b198107da9786435aaa810f3fc1f5a43705e903ccd38]
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject u-mt2omhrl55 with role project-member in namespace 
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject u-qyel6jdtvd with role project-member in namespace 
+2021/05/06 06:09:39 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=cattle-global-data
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject u-qyel6jdtvd with role edit in namespace 
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Creating roleBinding for subject u-mt2omhrl55 with role edit in namespace 
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [WARNING] error updating ns p-47nwd status: Operation cannot be fulfilled on namespaces "p-47nwd": the object has been modified; please apply your changes to the latest version and try again
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [WARNING] error updating ns p-cbb2x status: Operation cannot be fulfilled on namespaces "p-cbb2x": the object has been modified; please apply your changes to the latest version and try again
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-cbb2x because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] Deleting roleBinding clusterrolebinding-jl9zw
+2021/05/06 06:09:39 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=kube-node-lease
+2021/05/06 06:09:39 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role project-member
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-47nwd
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role edit
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-cbb2x
+2021/05/06 06:09:39 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-47nwd
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role project-member
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role edit
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role project-member
+2021/05/06 06:09:39 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-mt2omhrl55 Role project-member
+2021/05/06 06:09:39 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role edit
+2021/05/06 06:09:39 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-mt2omhrl55 Role edit
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role project-member
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role edit
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-mt2omhrl55 Role edit
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role edit
+2021/05/06 06:09:39 [INFO] Creating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:39 [INFO] Creating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:39 [INFO] Creating roleBinding User u-qyel6jdtvd Role project-member
+2021/05/06 06:09:39 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:39 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:39 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=kube-public
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-47nwd
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] Deleting roleBinding clusterrolebinding-9d68z
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=kube-system
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-cbb2x
+2021/05/06 06:09:40 [ERROR] namespaceHandler: Sync: error adding project id label to namespace err=Operation cannot be fulfilled on namespaces "kube-system": the object has been modified; please apply your changes to the latest version and try again
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-47nwd
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-cbb2x
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] Updating clusterRole project-member-promoted for project access to global resource.
+2021/05/06 06:09:40 [INFO] Creating clusterRoleBinding for project access to global resource for subject u-mt2omhrl55 role p-cbb2x-namespaces-edit.
+2021/05/06 06:09:40 [INFO] Creating clusterRoleBinding for project access to global resource for subject u-mt2omhrl55 role project-member-promoted.
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-47nwd
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Creating clusterRoleBinding for project access to global resource for subject u-mt2omhrl55 role create-ns.
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-owner in namespace p-47nwd
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-cbb2x
+2021/05/06 06:09:40 [INFO] Creating clusterRoleBinding for project access to global resource for subject u-qyel6jdtvd role p-47nwd-namespaces-edit.
+2021/05/06 06:09:40 [INFO] Creating clusterRoleBinding for project access to global resource for subject u-qyel6jdtvd role project-member-promoted.
+2021/05/06 06:09:40 [INFO] Creating clusterRoleBinding for project access to global resource for subject u-qyel6jdtvd role create-ns.
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] Updating role project-member in p-cbb2x because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:40 [INFO] [mgmt-auth-prtb-controller] Updating role project-member in namespace p-47nwd
+2021/05/06 06:09:41 [INFO] Updating role project-member in p-47nwd because of rules difference with roleTemplate Project Member (project-member).
+2021/05/06 06:09:41 [INFO] Updating role project-owner in p-47nwd because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:41 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=kube-system
+2021/05/06 06:09:41 [INFO] Installing chart using helm version: rancher-helm
+2021/05/06 06:09:41 [INFO] namespaceHandler: addProjectIDLabelToNamespace: adding label field.cattle.io/projectId=p-47nwd to namespace=kube-system
+2021/05/06 06:09:41 [ERROR] namespaceHandler: Sync: error adding project id label to namespace err=Operation cannot be fulfilled on namespaces "kube-system": the object has been modified; please apply your changes to the latest version and try again
+2021/05/06 06:09:45 [INFO] error in remotedialer server [400]: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/05/06 06:09:45 [INFO] error in remotedialer server [400]: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/05/06 06:09:47 [INFO] Updating role project-owner in p-4kfj2 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:47 [INFO] Updating role project-owner in p-2ttf5 because of rules difference with roleTemplate Project Owner (project-owner).
+2021/05/06 06:09:51 [ERROR] error parsing azure-group-cache-size, skipping update strconv.Atoi: parsing "": invalid syntax
+2021/05/06 06:09:51 [ERROR] error syncing 'install-uuid': handler copy-settings: the server could not find the requested resource, requeuing
+2021/05/06 06:09:56 [INFO] Handling backend connection request [c-zbtll]
+2021/05/06 06:09:57 [INFO] harborClearUserAnnotationsController: clean harbor config
+2021/05/06 06:09:57 [INFO] harborClearUserAnnotationsController: clean harbor config
+2021/05/06 06:09:57 [ERROR] error syncing 'system-default-registry': handler copy-settings: the server could not find the requested resource, requeuing
+2021/05/06 06:10:00 [INFO] Refreshing driverMetadata in 1440 minutes
+2021/05/06 06:10:00 [INFO] driverMetadata: refreshing data from upstream https://releases.rancher.com/kontainer-driver-metadata/release-v2.5/data.json
+2021/05/06 06:10:00 [INFO] Retrieve data.json from local path /var/lib/rancher-data/driver-metadata/data.json
+2021/05/06 06:10:07 [INFO] error in remotedialer server [400]: read tcp 172.17.0.2:443->3.36.106.170:62300: read: connection reset by peer
+2021/05/06 06:10:07 [ERROR] Unknown error: Get "https://3.36.106.170:6443/apis/apps/v1/namespaces/kube-public/replicasets?timeout=45s": tunnel disconnect
+2021/05/06 06:10:10 [INFO] error in remotedialer server [400]: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/05/06 06:10:10 [INFO] Handling backend connection request [c-zbtll:m-qldxt]
+Release "cluster-monitoring" has been upgraded.
+2021/05/06 06:10:12 [INFO] error in remotedialer server [400]: websocket: close 1006 (abnormal closure): unexpected EOF
+2021/05/06 06:10:13 [INFO] Handling backend connection request [c-zbtll:m-pftcm]
+LAST DEPLOYED: Thu May  6 06:09:42 2021
+NAMESPACE: cattle-prometheus
+STATUS: DEPLOYED
+
+RESOURCES:
+==> v1/ClusterRole
+NAME                                             CREATED AT
+exporter-kube-state-cluster-monitoring           2021-05-06T06:02:43Z
+exporter-node-cluster-monitoring                 2021-05-06T06:02:43Z
+operator-init-cluster-monitoring                 2021-05-06T06:02:42Z
+prometheus-cluster-monitoring-cattle-prometheus  2021-05-06T06:02:43Z
+
+==> v1/ClusterRoleBinding
+NAME                                             ROLE                                                         AGE
+exporter-kube-state-cluster-monitoring           ClusterRole/exporter-kube-state-cluster-monitoring           7m28s
+exporter-node-cluster-monitoring                 ClusterRole/exporter-node-cluster-monitoring                 7m28s
+operator-init-cluster-monitoring                 ClusterRole/operator-init-cluster-monitoring                 7m28s
+prometheus-cluster-monitoring-cattle-prometheus  ClusterRole/prometheus-cluster-monitoring-cattle-prometheus  7m28s
+
+==> v1/ConfigMap
+NAME                                         DATA  AGE
+grafana-cluster-monitoring-dashboards        11    7m29s
+grafana-cluster-monitoring-nginx             1     7m29s
+grafana-cluster-monitoring-provisionings     3     7m30s
+grafana-istio-cluster-monitoring-dashboards  8     7m29s
+operator-init-cluster-monitoring             6     7m29s
+prometheus-cluster-monitoring-nginx          2     7m29s
+
+==> v1/DaemonSet
+NAME                              DESIRED  CURRENT  READY  UP-TO-DATE  AVAILABLE  NODE SELECTOR           AGE
+exporter-node-cluster-monitoring  3        3        3      3           3          kubernetes.io/os=linux  7m28s
+
+==> v1/Deployment
+NAME                                    READY  UP-TO-DATE  AVAILABLE  AGE
+exporter-kube-state-cluster-monitoring  1/1    1           1          7m28s
+grafana-cluster-monitoring              1/1    1           1          7m28s
+
+==> v1/Endpoints
+NAME                           ENDPOINTS                                                   AGE
+expose-kube-cm-metrics         172.31.9.146:10252,172.31.14.234:10252,172.31.15.220:10252  7m28s
+expose-kube-etcd-metrics       172.31.9.146:2379,172.31.14.234:2379,172.31.15.220:2379     7m29s
+expose-kube-scheduler-metrics  172.31.9.146:10251,172.31.14.234:10251,172.31.15.220:10251  7m28s
+
+==> v1/Pod(related)
+NAME                                                     READY  STATUS   RESTARTS  AGE
+exporter-kube-state-cluster-monitoring-686c467bfb-smtqk  1/1    Running  0         7m30s
+exporter-node-cluster-monitoring-sm6hv                   1/1    Running  0         7m29s
+exporter-node-cluster-monitoring-x9zkj                   1/1    Running  0         7m29s
+exporter-node-cluster-monitoring-ztdgb                   1/1    Running  0         7m29s
+grafana-cluster-monitoring-7894ccb45b-pl9jg              2/2    Running  0         7m30s
+
+==> v1/Prometheus
+NAME                VERSION  REPLICAS  AGE
+cluster-monitoring  v2.18.2  1         7m29s
+
+==> v1/PrometheusRule
+NAME                                          AGE
+compatible-v116-deprecated-metrics            7m28s
+compatible-v117-deprecated-apiserver-metrics  7m28s
+
+==> v1/Role
+NAME                                       CREATED AT
+access-grafana                             2021-05-06T06:02:43Z
+exporter-node-cluster-monitoring-psp-role  2021-05-06T06:02:43Z
+
+==> v1/RoleBinding
+NAME                                              ROLE                                            AGE
+access-grafana                                    Role/access-grafana                             7m28s
+exporter-node-cluster-monitoring-psp-rolebinding  Role/exporter-node-cluster-monitoring-psp-role  7m28s
+
+==> v1/Secret
+NAME                                                           TYPE    DATA  AGE
+prometheus-cluster-monitoring-additional-alertmanager-configs  Opaque  1     7m30s
+prometheus-cluster-monitoring-additional-scrape-configs        Opaque  1     7m30s
+prometheus-cluster-monitoring-thanos                           Opaque  1     6m44s
+
+==> v1/Service
+NAME                           TYPE       CLUSTER-IP     EXTERNAL-IP  PORT(S)              AGE
+access-grafana                 ClusterIP  10.43.52.1     <none>       80/TCP               7m28s
+access-prometheus              ClusterIP  10.43.189.67   <none>       80/TCP               7m28s
+access-thanos                  ClusterIP  10.43.142.102  <none>       10901/TCP,10902/TCP  6m43s
+expose-grafana-metrics         ClusterIP  None           <none>       3000/TCP             7m28s
+expose-kube-cm-metrics         ClusterIP  None           <none>       10252/TCP            7m28s
+expose-kube-etcd-metrics       ClusterIP  None           <none>       2379/TCP             7m28s
+expose-kube-scheduler-metrics  ClusterIP  None           <none>       10251/TCP            7m28s
+expose-kubernetes-metrics      ClusterIP  None           <none>       8080/TCP,8081/TCP    7m28s
+expose-node-metrics            ClusterIP  None           <none>       9796/TCP             7m28s
+expose-prometheus-metrics      ClusterIP  None           <none>       9090/TCP             7m28s
+
+==> v1/ServiceAccount
+NAME                                    SECRETS  AGE
+cluster-monitoring                      1        7m29s
+exporter-kube-state-cluster-monitoring  1        7m29s
+exporter-node-cluster-monitoring        1        7m29s
+operator-init-cluster-monitoring        1        7m29s
+
+==> v1/ServiceMonitor
+NAME                                                 AGE
+exporter-fluentd-cluster-monitoring                  7m28s
+exporter-kube-controller-manager-cluster-monitoring  7m28s
+exporter-kube-etcd-cluster-monitoring                7m28s
+exporter-kube-scheduler-cluster-monitoring           7m28s
+exporter-kube-state-cluster-monitoring               7m28s
+exporter-kubelets-cluster-monitoring                 7m28s
+exporter-kubernetes-cluster-monitoring               7m28s
+exporter-node-cluster-monitoring                     7m28s
+grafana-cluster-monitoring                           7m28s
+prometheus-cluster-monitoring                        7m28s
+
+==> v1beta1/PodSecurityPolicy
+NAME                              PRIV   CAPS      SELINUX   RUNASUSER  FSGROUP    SUPGROUP  READONLYROOTFS  VOLUMES
+exporter-node-cluster-monitoring  false  RunAsAny  RunAsAny  MustRunAs  MustRunAs  false     configMap,emptyDir,projected,secret,downwardAPI,persistentVolumeClaim,hostPath
+
+
+2021/05/06 06:10:18 [INFO] Installing chart using helm version: rancher-helm
+2021/05/06 06:10:29 [INFO] Refreshing all schemas
+2021/05/06 06:10:29 [INFO] Refreshing all schemas
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Binding
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind ComponentStatus
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind ConfigMap
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Endpoints
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Event
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind LimitRange
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Namespace
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Node
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind PersistentVolumeClaim
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind PersistentVolume
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Pod
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind PodTemplate
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind ReplicationController
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind ResourceQuota
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Secret
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind ServiceAccount
+2021/05/06 06:10:29 [INFO] APIVersion /v1 Kind Service
+2021/05/06 06:10:29 [INFO] APIVersion apiregistration.k8s.io/v1 Kind APIService
+2021/05/06 06:10:29 [INFO] APIVersion apiregistration.k8s.io/v1beta1 Kind APIService
+2021/05/06 06:10:29 [INFO] APIVersion extensions/v1beta1 Kind Ingress
+2021/05/06 06:10:29 [INFO] APIVersion apps/v1 Kind ControllerRevision
+2021/05/06 06:10:29 [INFO] APIVersion apps/v1 Kind DaemonSet
+2021/05/06 06:10:29 [INFO] APIVersion apps/v1 Kind Deployment
+2021/05/06 06:10:29 [INFO] APIVersion apps/v1 Kind ReplicaSet
+2021/05/06 06:10:29 [INFO] APIVersion apps/v1 Kind StatefulSet
+2021/05/06 06:10:29 [INFO] APIVersion events.k8s.io/v1beta1 Kind Event
+2021/05/06 06:10:29 [INFO] APIVersion authentication.k8s.io/v1 Kind TokenReview
+2021/05/06 06:10:29 [INFO] APIVersion authentication.k8s.io/v1beta1 Kind TokenReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1 Kind LocalSubjectAccessReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectAccessReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1 Kind SelfSubjectRulesReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1 Kind SubjectAccessReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind LocalSubjectAccessReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectAccessReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SelfSubjectRulesReview
+2021/05/06 06:10:29 [INFO] APIVersion authorization.k8s.io/v1beta1 Kind SubjectAccessReview
+2021/05/06 06:10:29 [INFO] APIVersion autoscaling/v1 Kind HorizontalPodAutoscaler
+2021/05/06 06:10:29 [INFO] APIVersion autoscaling/v2beta1 Kind HorizontalPodAutoscaler
+2021/05/06 06:10:29 [INFO] APIVersion autoscaling/v2beta2 Kind HorizontalPodAutoscaler
+2021/05/06 06:10:29 [INFO] APIVersion batch/v1 Kind Job
+2021/05/06 06:10:29 [INFO] APIVersion batch/v1beta1 Kind CronJob
+2021/05/06 06:10:29 [INFO] APIVersion certificates.k8s.io/v1beta1 Kind CertificateSigningRequest
+2021/05/06 06:10:29 [INFO] APIVersion networking.k8s.io/v1 Kind NetworkPolicy
+2021/05/06 06:10:29 [INFO] APIVersion networking.k8s.io/v1beta1 Kind IngressClass
+2021/05/06 06:10:29 [INFO] APIVersion networking.k8s.io/v1beta1 Kind Ingress
+2021/05/06 06:10:29 [INFO] APIVersion policy/v1beta1 Kind PodDisruptionBudget
+2021/05/06 06:10:29 [INFO] APIVersion policy/v1beta1 Kind PodSecurityPolicy
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRoleBinding
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind ClusterRole
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind RoleBinding
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1 Kind Role
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRoleBinding
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind ClusterRole
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind RoleBinding
+2021/05/06 06:10:29 [INFO] APIVersion rbac.authorization.k8s.io/v1beta1 Kind Role
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1 Kind CSIDriver
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1 Kind CSINode
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1 Kind StorageClass
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1 Kind VolumeAttachment
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSIDriver
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1beta1 Kind CSINode
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1beta1 Kind StorageClass
+2021/05/06 06:10:29 [INFO] APIVersion storage.k8s.io/v1beta1 Kind VolumeAttachment
+2021/05/06 06:10:29 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind MutatingWebhookConfiguration
+2021/05/06 06:10:29 [INFO] APIVersion admissionregistration.k8s.io/v1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:10:29 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind MutatingWebhookConfiguration
+2021/05/06 06:10:29 [INFO] APIVersion admissionregistration.k8s.io/v1beta1 Kind ValidatingWebhookConfiguration
+2021/05/06 06:10:29 [INFO] APIVersion apiextensions.k8s.io/v1 Kind CustomResourceDefinition
+2021/05/06 06:10:29 [INFO] APIVersion apiextensions.k8s.io/v1beta1 Kind CustomResourceDefinition
+2021/05/06 06:10:29 [INFO] APIVersion scheduling.k8s.io/v1 Kind PriorityClass
+2021/05/06 06:10:29 [INFO] APIVersion scheduling.k8s.io/v1beta1 Kind PriorityClass
+2021/05/06 06:10:29 [INFO] APIVersion coordination.k8s.io/v1 Kind Lease
+2021/05/06 06:10:29 [INFO] APIVersion coordination.k8s.io/v1beta1 Kind Lease
+2021/05/06 06:10:29 [INFO] APIVersion node.k8s.io/v1beta1 Kind RuntimeClass
+2021/05/06 06:10:29 [INFO] APIVersion discovery.k8s.io/v1beta1 Kind EndpointSlice
+2021/05/06 06:10:29 [INFO] APIVersion catalog.cattle.io/v1 Kind App
+2021/05/06 06:10:29 [INFO] APIVersion catalog.cattle.io/v1 Kind Operation
+2021/05/06 06:10:29 [INFO] APIVersion catalog.cattle.io/v1 Kind ClusterRepo
+2021/05/06 06:10:29 [INFO] APIVersion cis.f5.com/v1 Kind TLSProfile
+2021/05/06 06:10:29 [INFO] APIVersion cis.f5.com/v1 Kind TransportServer
+2021/05/06 06:10:29 [INFO] APIVersion cis.f5.com/v1 Kind ExternalDNS
+2021/05/06 06:10:29 [INFO] APIVersion cis.f5.com/v1 Kind VirtualServer
+2021/05/06 06:10:29 [INFO] APIVersion helm.cattle.io/v1 Kind HelmChart
+2021/05/06 06:10:29 [INFO] APIVersion k3s.cattle.io/v1 Kind Addon
+2021/05/06 06:10:29 [INFO] APIVersion monitoring.coreos.com/v1 Kind PrometheusRule
+2021/05/06 06:10:29 [INFO] APIVersion monitoring.coreos.com/v1 Kind ServiceMonitor
+2021/05/06 06:10:29 [INFO] APIVersion monitoring.coreos.com/v1 Kind Prometheus
+2021/05/06 06:10:29 [INFO] APIVersion monitoring.coreos.com/v1 Kind Alertmanager
+2021/05/06 06:10:29 [INFO] APIVersion rancher.cattle.io/v1 Kind RoleTemplate
+2021/05/06 06:10:29 [INFO] APIVersion rancher.cattle.io/v1 Kind Cluster
+2021/05/06 06:10:29 [INFO] APIVersion rancher.cattle.io/v1 Kind Project
+2021/05/06 06:10:29 [INFO] APIVersion rancher.cattle.io/v1 Kind RoleTemplateBinding
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind NodeTemplate
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDnsProvider
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlert
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind CisConfig
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectNetworkPolicy
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Setting
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind TemplateContent
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ComposeConfig
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind EtcdBackup
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind CisBenchmarkVersion
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Token
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind TemplateVersion
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplate
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind NotificationTemplate
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Node
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterAppRevision
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind AuthConfig
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRoleBinding
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRegistrationToken
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind MultiClusterApp
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterMonitorGraph
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertGroup
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind SamlToken
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind NodePool
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind KontainerDriver
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind CatalogTemplateVersion
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplateProjectBinding
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectMonitorGraph
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sServiceOption
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlertRule
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind GlobalDns
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind User
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind GlobalRole
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplate
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Notifier
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterLogging
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterAlert
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectRoleTemplateBinding
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertGroup
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Feature
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Preference
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterScan
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectCatalog
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Group
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterTemplateRevision
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind UserAttribute
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Catalog
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind PodSecurityPolicyTemplate
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind RkeK8sSystemImage
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Template
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind RoleTemplate
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Cluster
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterRoleTemplateBinding
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind NodeDriver
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind FleetWorkspace
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectLogging
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind GroupMember
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ProjectAlertRule
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind DynamicSchema
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind MonitorMetric
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind ClusterCatalog
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind RkeAddon
+2021/05/06 06:10:29 [INFO] APIVersion management.cattle.io/v3 Kind Project
+2021/05/06 06:10:29 [INFO] APIVersion mgt.pandaria.io/v3 Kind SensitiveFilter
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind Pipeline
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeRepository
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind AppRevision
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeCredential
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind PipelineExecution
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind App
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind SourceCodeProviderConfig
+2021/05/06 06:10:29 [INFO] APIVersion project.cattle.io/v3 Kind PipelineSetting
+2021/05/06 06:10:30 [INFO] Watching metadata for rancher.cattle.io/v1, Kind=Cluster
+2021/05/06 06:10:30 [INFO] Watching metadata for rancher.cattle.io/v1, Kind=Project
+2021/05/06 06:10:30 [INFO] Watching metadata for rancher.cattle.io/v1, Kind=RoleTemplate
+2021/05/06 06:10:30 [INFO] Watching metadata for rancher.cattle.io/v1, Kind=RoleTemplateBinding
+2021/05/06 06:10:31 [ERROR] Failed to install system chart rancher-operator-crd: pod cattle-system/helm-operation-rhft4 failed, watch closed
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:33 [ERROR] error syncing 'rancher-operator-system/helm-operation-rhft4': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-rhft4), requeuing
+2021/05/06 06:10:34 [INFO] Handling backend connection request [c-zbtll:m-2bcrr]
+Release "cluster-monitoring" has been upgraded.
+LAST DEPLOYED: Thu May  6 06:10:20 2021
+NAMESPACE: cattle-prometheus
+STATUS: DEPLOYED
+
+RESOURCES:
+==> v1/ClusterRole
+NAME                                             CREATED AT
+exporter-kube-state-cluster-monitoring           2021-05-06T06:02:43Z
+exporter-node-cluster-monitoring                 2021-05-06T06:02:43Z
+operator-init-cluster-monitoring                 2021-05-06T06:02:42Z
+prometheus-cluster-monitoring-cattle-prometheus  2021-05-06T06:02:43Z
+
+==> v1/ClusterRoleBinding
+NAME                                             ROLE                                                         AGE
+exporter-kube-state-cluster-monitoring           ClusterRole/exporter-kube-state-cluster-monitoring           7m52s
+exporter-node-cluster-monitoring                 ClusterRole/exporter-node-cluster-monitoring                 7m52s
+operator-init-cluster-monitoring                 ClusterRole/operator-init-cluster-monitoring                 7m52s
+prometheus-cluster-monitoring-cattle-prometheus  ClusterRole/prometheus-cluster-monitoring-cattle-prometheus  7m52s
+
+==> v1/ConfigMap
+NAME                                         DATA  AGE
+grafana-cluster-monitoring-dashboards        11    7m52s
+grafana-cluster-monitoring-nginx             1     7m53s
+grafana-cluster-monitoring-provisionings     3     7m54s
+grafana-istio-cluster-monitoring-dashboards  8     7m52s
+operator-init-cluster-monitoring             6     7m53s
+prometheus-cluster-monitoring-nginx          2     7m52s
+
+==> v1/DaemonSet
+NAME                              DESIRED  CURRENT  READY  UP-TO-DATE  AVAILABLE  NODE SELECTOR           AGE
+exporter-node-cluster-monitoring  3        3        3      3           3          kubernetes.io/os=linux  7m52s
+
+==> v1/Deployment
+NAME                                    READY  UP-TO-DATE  AVAILABLE  AGE
+exporter-kube-state-cluster-monitoring  1/1    1           1          7m52s
+grafana-cluster-monitoring              1/1    1           1          7m52s
+
+==> v1/Endpoints
+NAME                           ENDPOINTS                                                   AGE
+expose-kube-cm-metrics         172.31.9.146:10252,172.31.14.234:10252,172.31.15.220:10252  7m52s
+expose-kube-etcd-metrics       172.31.9.146:2379,172.31.14.234:2379,172.31.15.220:2379     7m52s
+expose-kube-scheduler-metrics  172.31.9.146:10251,172.31.14.234:10251,172.31.15.220:10251  7m52s
+
+==> v1/Pod(related)
+NAME                                                     READY  STATUS   RESTARTS  AGE
+exporter-kube-state-cluster-monitoring-686c467bfb-smtqk  1/1    Running  0         7m53s
+exporter-node-cluster-monitoring-sm6hv                   1/1    Running  0         7m53s
+exporter-node-cluster-monitoring-x9zkj                   1/1    Running  0         7m53s
+exporter-node-cluster-monitoring-ztdgb                   1/1    Running  0         7m53s
+grafana-cluster-monitoring-7894ccb45b-pl9jg              2/2    Running  0         7m53s
+
+==> v1/Prometheus
+NAME                VERSION  REPLICAS  AGE
+cluster-monitoring  v2.18.2  1         7m52s
+
+==> v1/PrometheusRule
+NAME                                          AGE
+compatible-v116-deprecated-metrics            7m51s
+compatible-v117-deprecated-apiserver-metrics  7m51s
+
+==> v1/Role
+NAME                                       CREATED AT
+access-grafana                             2021-05-06T06:02:43Z
+exporter-node-cluster-monitoring-psp-role  2021-05-06T06:02:43Z
+
+==> v1/RoleBinding
+NAME                                              ROLE                                            AGE
+access-grafana                                    Role/access-grafana                             7m52s
+exporter-node-cluster-monitoring-psp-rolebinding  Role/exporter-node-cluster-monitoring-psp-role  7m52s
+
+==> v1/Secret
+NAME                                                           TYPE    DATA  AGE
+prometheus-cluster-monitoring-additional-alertmanager-configs  Opaque  1     7m53s
+prometheus-cluster-monitoring-additional-scrape-configs        Opaque  1     7m53s
+prometheus-cluster-monitoring-thanos                           Opaque  1     7m7s
+
+==> v1/Service
+NAME                           TYPE       CLUSTER-IP     EXTERNAL-IP  PORT(S)              AGE
+access-grafana                 ClusterIP  10.43.52.1     <none>       80/TCP               7m52s
+access-prometheus              ClusterIP  10.43.189.67   <none>       80/TCP               7m52s
+access-thanos                  ClusterIP  10.43.142.102  <none>       10901/TCP,10902/TCP  7m7s
+expose-grafana-metrics         ClusterIP  None           <none>       3000/TCP             7m52s
+expose-kube-cm-metrics         ClusterIP  None           <none>       10252/TCP            7m52s
+expose-kube-etcd-metrics       ClusterIP  None           <none>       2379/TCP             7m52s
+expose-kube-scheduler-metrics  ClusterIP  None           <none>       10251/TCP            7m52s
+expose-kubernetes-metrics      ClusterIP  None           <none>       8080/TCP,8081/TCP    7m52s
+expose-node-metrics            ClusterIP  None           <none>       9796/TCP             7m52s
+expose-prometheus-metrics      ClusterIP  None           <none>       9090/TCP             7m52s
+
+==> v1/ServiceAccount
+NAME                                    SECRETS  AGE
+cluster-monitoring                      1        7m53s
+exporter-kube-state-cluster-monitoring  1        7m53s
+exporter-node-cluster-monitoring        1        7m53s
+operator-init-cluster-monitoring        1        7m53s
+
+==> v1/ServiceMonitor
+NAME                                                 AGE
+exporter-fluentd-cluster-monitoring                  7m51s
+exporter-kube-controller-manager-cluster-monitoring  7m51s
+exporter-kube-etcd-cluster-monitoring                7m51s
+exporter-kube-scheduler-cluster-monitoring           7m51s
+exporter-kube-state-cluster-monitoring               7m51s
+exporter-kubelets-cluster-monitoring                 7m51s
+exporter-kubernetes-cluster-monitoring               7m51s
+exporter-node-cluster-monitoring                     7m51s
+grafana-cluster-monitoring                           7m51s
+prometheus-cluster-monitoring                        7m51s
+
+==> v1beta1/PodSecurityPolicy
+NAME                              PRIV   CAPS      SELINUX   RUNASUSER  FSGROUP    SUPGROUP  READONLYROOTFS  VOLUMES
+exporter-node-cluster-monitoring  false  RunAsAny  RunAsAny  MustRunAs  MustRunAs  false     configMap,emptyDir,projected,secret,downwardAPI,persistentVolumeClaim,hostPath
+
+
+2021/05/06 06:10:37 [INFO] Catalog-cache removed 2 entries from disk
+2021/05/06 06:10:45 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:10:45 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:10:45 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:10:46 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:10:46 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:10:46 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:10:46 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:10:46 [ERROR] error syncing 'cattle-system/helm-operation-5g7z6': handler helm-operation: an error on the server ("container not found (\"proxy\")") has prevented the request from succeeding (get pods helm-operation-5g7z6), requeuing
+2021/05/06 06:11:01 [INFO] Installing chart using helm version: rancher-helm
+2021/05/06 06:11:01 [INFO] Installing chart using helm version: rancher-helm
+Release "monitoring-operator" has been upgraded.
+LAST DEPLOYED: Thu May  6 06:11:01 2021
+NAMESPACE: cattle-prometheus
+STATUS: DEPLOYED
+
+RESOURCES:
+==> v1/ClusterRole
+NAME                                     CREATED AT
+operator-init-monitoring-operator        2021-05-06T06:02:42Z
+prometheus-operator-monitoring-operator  2021-05-06T06:02:42Z
+
+==> v1/ClusterRoleBinding
+NAME                                     ROLE                                                 AGE
+operator-init-monitoring-operator        ClusterRole/operator-init-monitoring-operator        8m35s
+prometheus-operator-monitoring-operator  ClusterRole/prometheus-operator-monitoring-operator  8m35s
+
+==> v1/ConfigMap
+NAME                               DATA  AGE
+operator-init-monitoring-operator  6     8m36s
+
+==> v1/Deployment
+NAME                                     READY  UP-TO-DATE  AVAILABLE  AGE
+prometheus-operator-monitoring-operator  1/1    1           1          8m35s
+
+==> v1/Pod(related)
+NAME                                                      READY  STATUS       RESTARTS  AGE
+prometheus-operator-monitoring-operator-5f8bbdc5b6-xnjkw  1/1    Running      0         12s
+prometheus-operator-monitoring-operator-f9759c4bf-5bqcs   0/1    Terminating  0         8m35s
+
+==> v1/Service
+NAME                     TYPE       CLUSTER-IP  EXTERNAL-IP  PORT(S)                       AGE
+expose-kubelets-metrics  ClusterIP  None        <none>       10250/TCP,10255/TCP,4194/TCP  8m35s
+expose-operator-metrics  ClusterIP  None        <none>       47323/TCP                     8m35s
+
+==> v1/ServiceAccount
+NAME                                     SECRETS  AGE
+operator-init-monitoring-operator        1        8m36s
+prometheus-operator-monitoring-operator  1        8m36s
+
+==> v1/ServiceMonitor
+NAME                                     AGE
+prometheus-operator-monitoring-operator  8m34s
+
+
+UPGRADE FAILED
+Error: Job failed: BackoffLimitExceeded
+2021/05/06 06:11:46 [ERROR] error syncing 'p-4kfj2/cluster-monitoring': handler helm-controller: failed to install app cluster-monitoring. Error: UPGRADE FAILED: Job failed: BackoffLimitExceeded
+, requeuing
+2021/05/06 06:11:46 [INFO] Installing chart using helm version: rancher-helm
+Release "cluster-monitoring" has been upgraded.
+LAST DEPLOYED: Thu May  6 06:11:48 2021
+NAMESPACE: cattle-prometheus
+STATUS: DEPLOYED
+
+RESOURCES:
+==> v1/ClusterRole
+NAME                                             CREATED AT
+exporter-kube-state-cluster-monitoring           2021-05-06T06:02:43Z
+exporter-node-cluster-monitoring                 2021-05-06T06:02:43Z
+operator-init-cluster-monitoring                 2021-05-06T06:02:42Z
+prometheus-cluster-monitoring-cattle-prometheus  2021-05-06T06:02:43Z
+
+==> v1/ClusterRoleBinding
+NAME                                             ROLE                                                         AGE
+exporter-kube-state-cluster-monitoring           ClusterRole/exporter-kube-state-cluster-monitoring           9m21s
+exporter-node-cluster-monitoring                 ClusterRole/exporter-node-cluster-monitoring                 9m21s
+operator-init-cluster-monitoring                 ClusterRole/operator-init-cluster-monitoring                 9m21s
+prometheus-cluster-monitoring-cattle-prometheus  ClusterRole/prometheus-cluster-monitoring-cattle-prometheus  9m21s
+
+==> v1/ConfigMap
+NAME                                         DATA  AGE
+grafana-cluster-monitoring-dashboards        11    9m22s
+grafana-cluster-monitoring-nginx             1     9m22s
+grafana-cluster-monitoring-provisionings     3     9m23s
+grafana-istio-cluster-monitoring-dashboards  8     9m22s
+operator-init-cluster-monitoring             6     9m22s
+prometheus-cluster-monitoring-nginx          2     9m22s
+
+==> v1/DaemonSet
+NAME                              DESIRED  CURRENT  READY  UP-TO-DATE  AVAILABLE  NODE SELECTOR           AGE
+exporter-node-cluster-monitoring  3        3        3      3           3          kubernetes.io/os=linux  9m21s
+
+==> v1/Deployment
+NAME                                    READY  UP-TO-DATE  AVAILABLE  AGE
+exporter-kube-state-cluster-monitoring  1/1    1           1          9m21s
+grafana-cluster-monitoring              1/1    1           1          9m21s
+
+==> v1/Endpoints
+NAME                           ENDPOINTS                                                   AGE
+expose-kube-cm-metrics         172.31.9.146:10252,172.31.14.234:10252,172.31.15.220:10252  9m21s
+expose-kube-etcd-metrics       172.31.9.146:2379,172.31.14.234:2379,172.31.15.220:2379     9m21s
+expose-kube-scheduler-metrics  172.31.9.146:10251,172.31.14.234:10251,172.31.15.220:10251  9m21s
+
+==> v1/Pod(related)
+NAME                                                     READY  STATUS   RESTARTS  AGE
+exporter-kube-state-cluster-monitoring-686c467bfb-smtqk  1/1    Running  0         9m22s
+exporter-node-cluster-monitoring-sm6hv                   1/1    Running  0         9m22s
+exporter-node-cluster-monitoring-x9zkj                   1/1    Running  0         9m22s
+exporter-node-cluster-monitoring-ztdgb                   1/1    Running  0         9m22s
+grafana-cluster-monitoring-7894ccb45b-pl9jg              2/2    Running  0         9m22s
+
+==> v1/Prometheus
+NAME                VERSION  REPLICAS  AGE
+cluster-monitoring  v2.18.2  1         9m21s
+
+==> v1/PrometheusRule
+NAME                                          AGE
+compatible-v116-deprecated-metrics            9m20s
+compatible-v117-deprecated-apiserver-metrics  9m20s
+
+==> v1/Role
+NAME                                       CREATED AT
+access-grafana                             2021-05-06T06:02:43Z
+exporter-node-cluster-monitoring-psp-role  2021-05-06T06:02:43Z
+
+==> v1/RoleBinding
+NAME                                              ROLE                                            AGE
+access-grafana                                    Role/access-grafana                             9m21s
+exporter-node-cluster-monitoring-psp-rolebinding  Role/exporter-node-cluster-monitoring-psp-role  9m21s
+
+==> v1/Secret
+NAME                                                           TYPE    DATA  AGE
+prometheus-cluster-monitoring-additional-alertmanager-configs  Opaque  1     9m23s
+prometheus-cluster-monitoring-additional-scrape-configs        Opaque  1     9m23s
+prometheus-cluster-monitoring-thanos                           Opaque  1     13s
+
+==> v1/Service
+NAME                           TYPE       CLUSTER-IP    EXTERNAL-IP  PORT(S)              AGE
+access-grafana                 ClusterIP  10.43.52.1    <none>       80/TCP               9m21s
+access-prometheus              ClusterIP  10.43.189.67  <none>       80/TCP               9m21s
+access-thanos                  ClusterIP  10.43.42.187  <none>       10901/TCP,10902/TCP  12s
+expose-grafana-metrics         ClusterIP  None          <none>       3000/TCP             9m21s
+expose-kube-cm-metrics         ClusterIP  None          <none>       10252/TCP            9m21s
+expose-kube-etcd-metrics       ClusterIP  None          <none>       2379/TCP             9m21s
+expose-kube-scheduler-metrics  ClusterIP  None          <none>       10251/TCP            9m21s
+expose-kubernetes-metrics      ClusterIP  None          <none>       8080/TCP,8081/TCP    9m21s
+expose-node-metrics            ClusterIP  None          <none>       9796/TCP             9m21s
+expose-prometheus-metrics      ClusterIP  None          <none>       9090/TCP             9m21s
+
+==> v1/ServiceAccount
+NAME                                    SECRETS  AGE
+cluster-monitoring                      1        9m22s
+exporter-kube-state-cluster-monitoring  1        9m22s
+exporter-node-cluster-monitoring        1        9m22s
+operator-init-cluster-monitoring        1        9m22s
+
+==> v1/ServiceMonitor
+NAME                                                 AGE
+exporter-fluentd-cluster-monitoring                  9m20s
+exporter-kube-controller-manager-cluster-monitoring  9m20s
+exporter-kube-etcd-cluster-monitoring                9m20s
+exporter-kube-scheduler-cluster-monitoring           9m20s
+exporter-kube-state-cluster-monitoring               9m20s
+exporter-kubelets-cluster-monitoring                 9m20s
+exporter-kubernetes-cluster-monitoring               9m20s
+exporter-node-cluster-monitoring                     9m21s
+grafana-cluster-monitoring                           9m21s
+prometheus-cluster-monitoring                        9m20s
+
+==> v1beta1/PodSecurityPolicy
+NAME                              PRIV   CAPS      SELINUX   RUNASUSER  FSGROUP    SUPGROUP  READONLYROOTFS  VOLUMES
+exporter-node-cluster-monitoring  false  RunAsAny  RunAsAny  MustRunAs  MustRunAs  false     configMap,emptyDir,projected,secret,downwardAPI,persistentVolumeClaim,hostPath
+
+
